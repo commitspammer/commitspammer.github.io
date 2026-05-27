@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍿</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -33,7 +34,7 @@
       }
     </style>
   </head>
-  <body>
+  <body><div id="app">
     <!--bg-[repeating-linear-gradient(to_right,#2b0000_0px,#5e0000_35px,#b91c1c_55px,#7a0000_75px,#2b0000_110px)]-->
     <!-- NOTE: The image "https://gcdnb.pbrd.co/images/M-7_6JpjSNk4.png" will die on August 26 -->
     <div class="min-h-screen p-4 pt-8 bg-[url(https://gcdnb.pbrd.co/images/M-7_6JpjSNk4.png)] bg-linear-to-l from-red-900 to-red-500">
@@ -46,62 +47,55 @@
             <p class="text-xl xl:text-2xl">and the memories we shared along the way</p>
           </div>
           <hr class="mb-2 border border-red-950">
-          <div class="flex justify-between rounded-sm hover:bg-yellow-300 duration-300">
-            <p>WAKE UP DEAD MAN</p>
-            <p>5★</p>
-          </div>
-          <div class="flex justify-between">
-            <p>THE TRUMAN SHOW</p>
-            <p>4.5★</p>
-          </div>
-          <div class="flex justify-between">
-            <p>FALLING DOWN</p>
-            <p>3.2★</p>
-          </div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
-          <div class="flex justify-between"><p>V FOR VENDETTA</p><p>0★</p></div>
+          <div v-if="movies.length === 0">Loading movies...</div>
+          <movie-item
+            v-else
+            v-for="movie in movies"
+            :key="movie.name"
+            :title="movie.name"
+            :rating="movie.rating"
+            :watched="movie.watched"
+          ></movie-item>
         </div>
       </div>
     </div>
-  </body>
+  </div></body>
+    <script>
+      const app = Vue.createApp({
+        data() {
+          return {
+            movies: []
+          }
+        },
+
+        async mounted() {
+          try {
+            const response = await fetch('./movies.json')
+            this.movies = await response.json()
+          } catch (error) {
+            console.error('Failed to load movies.json', error)
+          }
+        }
+      })
+
+      app.component('movie-item', {
+        props: {
+          title: String,
+          rating: [String, Number],
+          watched: Boolean
+        },
+
+        template: `
+          <div v-if="watched" class="flex justify-between hover:bg-yellow-300 duration-300 px-1">
+            <p>{{ title }}</p>
+            <p>{{ rating }}★</p>
+          </div>
+          <div v-else class="flex justify-between bg-red-950 text-white duration-300 px-1">
+            <p>{{ title }}</p>
+          </div>
+        `
+      })
+
+      app.mount('#app')
+    </script>
 </html>
