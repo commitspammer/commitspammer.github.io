@@ -1,0 +1,1 @@
+import{n as e,t}from"./index-BFHvWmUM.js";var n=(e,t)=>{let n=e.__vccOpts||e;for(let[e,r]of t)n[e]=r;return n},r={};function i(n,r){return e(),t(`div`,null,`Test View`)}var a=n(r,[[`render`,i]]);export{a as default};
