@@ -25,17 +25,24 @@
         <div class="flex flex-row-reverse space-x-reverse">
           <button
             v-on:click="sortFilmsByRating"
-            class="text-xl xl:text-2xl px-2 bg-red-950 text-white"
+            class="text-xl xl:text-2xl px-2"
+            :class="sortRatingPressedClass"
           >
             Rating
           </button>
-          <button class="text-xl xl:text-2xl px-2">Alphabet</button>
+          <button
+            v-on:click="sortFilmsByAlphabet"
+            class="text-xl xl:text-2xl px-2"
+            :class="sortAlphabetPressedClass"
+          >
+            Alphabet
+          </button>
         </div>
         <hr class="mb-2 border border-red-950" />
         <div v-if="films.length === 0">Winding films...</div>
         <FilmItem
           v-else
-          v-for="(f, index) in films"
+          v-for="(f, index) in watchedThenUnwatchedFilms"
           :key="f.name"
           :rank="index + 1"
           :title="f.name"
@@ -48,13 +55,32 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import FilmItem from '../components/FilmItem.vue'
 
 const films = ref([])
 
+const watchedThenUnwatchedFilms = computed(() =>
+  films.value.filter((f) => f.watched).concat(films.value.filter((f) => !f.watched)),
+)
+const sortMode = ref(null)
+
+const sortRatingPressedClass = computed(() =>
+  sortMode.value === 'rating' ? ['bg-red-950', 'text-white'] : [],
+)
+
+const sortAlphabetPressedClass = computed(() =>
+  sortMode.value === 'alphabet' ? ['bg-red-950', 'text-white'] : [],
+)
+
 const sortFilmsByRating = () => {
+  sortMode.value = 'rating'
   films.value.sort((a, b) => a.rating < b.rating)
+}
+
+const sortFilmsByAlphabet = () => {
+  sortMode.value = 'alphabet'
+  films.value.sort((a, b) => a.name > b.name)
 }
 
 onMounted(async () => {
@@ -63,6 +89,7 @@ onMounted(async () => {
     films.value = await response.json()
   } catch (error) {
     console.error('Failed to load films.json', error)
+    return
   }
 })
 </script>
