@@ -1,13 +1,13 @@
 [
-  { "name": "Guess Who's Back", "watched": true, "rating": 5.0 },
-  { "name": "Unicorn Wars", "watched": true, "rating": 4.7 },
-  { "name": "Cobra", "watched": true, "rating": 0 },
-  { "name": "Atlantis: The Lost Empire", "watched": true, "rating": 0 },
-  { "name": "Treasure Planet", "watched": false, "rating": 0 },
-  { "name": "The Iron Giant", "watched": true, "rating": 4.0 },
+  { "name": "Look Who's Back", "watched": true, "rating": 9.9 },
+  { "name": "Unicorn Wars", "watched": true, "rating": 9.7 },
+  { "name": "Cobra", "watched": true, "rating": 6 },
+  { "name": "Atlantis: The Lost Empire", "watched": true, "rating": 6.1 },
+  { "name": "Treasure Planet", "watched": false, "rating": 5.2 },
+  { "name": "The Iron Giant", "watched": true, "rating": 6.9 },
   { "name": "No Country For Old Men", "watched": true, "rating": 4.7 },
   { "name": "American Psycho", "watched": true, "rating": 3.9 },
-  { "name": "The Truman Show", "watched": true, "rating": 5.0 },
+  { "name": "The Truman Show", "watched": true, "rating": 10.0 },
   { "name": "Inglorious Basterds", "watched": true, "rating": 1.5 },
   { "name": "The Godfather", "watched": true, "rating": 0 },
   { "name": "Falling Down", "watched": true, "rating": 5.0 },
@@ -198,5 +198,6 @@
   { "name": "Fargo", "watched": true, "rating": 0 },
   { "name": "From", "watched": false, "rating": 0 },
   { "name": "Backrooms", "watched": true, "rating": 0 },
-  { "name": "Quantum of Solace", "watched": true, "rating": 0 }
+  { "name": "Quantum of Solace", "watched": true, "rating": 0 },
+  { "name": "Hokum", "watched": true, "rating": 0 }
 ]
