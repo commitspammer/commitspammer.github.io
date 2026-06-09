@@ -87,6 +87,7 @@ onMounted(async () => {
   try {
     const response = await fetch('/films.json')
     films.value = await response.json()
+    sortFilmsByRating()
   } catch (error) {
     console.error('Failed to load films.json', error)
     return

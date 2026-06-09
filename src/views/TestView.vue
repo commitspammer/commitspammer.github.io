@@ -11,55 +11,73 @@
             : 'CANCEL'
       }}
     </div>
-    <p>{{ output }}</p>
+    <p>{{ JSON.stringify(output) }}</p>
   </main>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue'
-const output = ref('[]')
+
+const films = ref([])
 const counter = ref(0)
 const total = ref(0)
+const output = ref([])
 const cancelState = ref('notCancelled')
+
+const resumeFetchingMovies = async () => {
+  while (counter.value < total.value) {
+    if (cancelState.value === 'cancelling') {
+      cancelState.value = 'cancelled'
+      throw new Error('Cancelled')
+    }
+    await new Promise((resolve) => setTimeout(resolve, 10000))
+    const film = films.value[counter.value]
+    const response = await fetch(
+      'https://api.imdbapi.dev/search/titles?query=' + film.name + '&limit=3',
+    )
+    if (!response.ok) {
+      throw new Error('HTTP Error')
+    }
+    const searchResults = await response.json()
+    const titles = searchResults.titles ?? []
+    output.value.push({
+      query: film.name,
+      titles: titles,
+    })
+    counter.value += 1
+    console.log(film.name)
+    console.log(titles)
+  }
+}
+
 onMounted(async () => {
   try {
     const response = await fetch('/films.json')
-    let films = await response.json()
-    films = films.slice(74)
-    total.value = films.length
-    for (const film of films) {
-      if (cancelState.value === 'cancelling') {
-        cancelState.value = 'cancelled'
-        throw new Error('Cancelled')
-      }
-      await new Promise((resolve) => setTimeout(resolve, 10000))
-      const response2 = await fetch(
-        'https://api.imdbapi.dev/search/titles?query=' + film.name + '&limit=3',
-      )
-      const searchResults = await response2.json()
-      if (!searchResults.titles) {
-        film.posterUrl = ''
-        output.value = JSON.stringify(films.filter((f) => f.posterUrl !== undefined))
-        counter.value += 1
-        console.log(film)
-        continue
-      }
-      const titles = searchResults.titles
-      for (const title of titles) {
-        if (title.type === 'tvSeries') {
-          continue
-        }
-        film.posterUrl = title.primaryImage.url
-        output.value = JSON.stringify(films.filter((f) => f.posterUrl !== undefined))
-        break
-      }
-      counter.value += 1
-      console.log(film)
+    if (!response.ok) {
+      throw new Error('HTTP Error')
     }
-    console.log(JSON.stringify(films))
-    output.value = JSON.stringify(films)
+    films.value = await response.json()
+    total.value = films.value.length
+    console.log(films.value)
   } catch (error) {
-    console.error('FAILED', error)
+    console.error('FAILED FETCHING FILMS LIST', error)
+    return
   }
+  let minutes = 1
+  while (counter.value < total.value) {
+    try {
+      await resumeFetchingMovies()
+    } catch (error) {
+      if (error.message === 'Cancelled') {
+        console.error('FETCHING CANCELLED', error)
+        return
+      }
+      console.error('FAILED FETCHING IMDB OR PARSING SEARCH RESULT', error)
+      console.error('TRYING AGAIN IN', minutes, 'MINUTES')
+      await new Promise((resolve) => setTimeout(resolve, minutes * 60000))
+      minutes += 1
+    }
+  }
+  console.log('DONE')
 })
 </script>
