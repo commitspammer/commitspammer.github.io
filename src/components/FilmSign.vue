@@ -1,34 +1,36 @@
 <template>
-  <div
-    class="relative w-full bg-stone-800 border-stone-800 border-16 md:border-32"
-    :class="[watched ? 'leds' : 'leds-off']"
-    :style="[
-      watched
-        ? 'filter: drop-shadow(0 5px 5px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;'
-        : '',
-    ]"
-  >
-    <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
-      <div class="">
-        <img
-          v-if="getImdbPoster(title)"
-          :src="getImdbPoster(title)"
-          alt=""
-          class="object-cover aspect-68/100"
-        />
-        <div
-          v-else
-          class="aspect-68/100 bg-yellow-100 flex items-center justify-center text-center text-sm md:text-xl"
-        >
-          {{ title }}
+  <div class="relative w-full bg-stone-800" style="filter: drop-shadow(0 5px 5px #000)">
+    <div
+      class="border-16 md:border-32"
+      :class="[watched ? 'leds' : 'leds-off']"
+      :style="[
+        watched
+          ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;'
+          : 'filter: drop-shadow(0 1px 1px #000);',
+      ]"
+    >
+      <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
+        <div class="">
+          <img
+            v-if="getImdbPoster(title)"
+            :src="getImdbPoster(title)"
+            alt=""
+            class="object-cover aspect-68/100"
+          />
+          <div
+            v-else
+            class="aspect-68/100 flex items-center justify-center text-center text-sm md:text-xl"
+          >
+            {{ title }}
+          </div>
         </div>
-      </div>
-      <div class="absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16">
-        <StarRating
-          :rating="rating"
-          :watched="watched"
-          class="size-20 md:size-32 text-2xl md:text-4xl"
-        />
+        <div class="absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16">
+          <StarRating
+            :rating="rating"
+            :watched="watched"
+            class="size-20 md:size-32 text-2xl md:text-4xl"
+          />
+        </div>
       </div>
     </div>
   </div>

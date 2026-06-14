@@ -201,5 +201,6 @@
   { "name": "Backrooms", "watched": true, "rating": 7.2 },
   { "name": "Quantum of Solace", "watched": true, "rating": 6.0 },
   { "name": "Hokum", "watched": true, "rating": 5.7 },
-  { "name": "Obsession", "watched": false, "rating": 0 }
+  { "name": "Obsession", "watched": false, "rating": 0 },
+  { "name": "Mr. Peabody and Sherman", "watched": false, "rating": 0 }
 ]
