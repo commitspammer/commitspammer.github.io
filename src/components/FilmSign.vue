@@ -1,0 +1,100 @@
+<template>
+  <div
+    class="relative w-full bg-stone-800 border-stone-800 border-16 md:border-32"
+    :class="[watched ? 'leds' : 'leds-off']"
+    :style="[
+      watched
+        ? 'filter: drop-shadow(0 5px 5px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;'
+        : '',
+    ]"
+  >
+    <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
+      <div class="">
+        <img
+          v-if="getImdbPoster(title)"
+          :src="getImdbPoster(title)"
+          alt=""
+          class="object-cover aspect-68/100"
+        />
+        <div
+          v-else
+          class="aspect-68/100 bg-yellow-100 flex items-center justify-center text-center text-sm md:text-xl"
+        >
+          {{ title }}
+        </div>
+      </div>
+      <div class="absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16">
+        <StarRating
+          :rating="rating"
+          :watched="watched"
+          class="size-20 md:size-32 text-2xl md:text-4xl"
+        />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { ref, /*computed,*/ onMounted } from 'vue'
+import StarRating from './StarRating.vue'
+
+//const props = defineProps({
+defineProps({
+  rank: Number,
+  title: String,
+  rating: [String, Number], //it's a union type
+  watched: Boolean,
+})
+
+//const halfRating = props.rating / 2
+//const stars = computed(
+//  () =>
+//    '☆'.repeat(5 - halfRating) +
+//    '⯫'.repeat(halfRating - Math.floor(halfRating) > 0 ? 1 : 0) +
+//    '★'.repeat(halfRating),
+//)
+
+const imdbResults = ref(null)
+
+const getImdbPoster = (title) => {
+  return imdbResults.value?.filter((item) => item.query === title)[0]?.titles[0]?.primaryImage.url
+}
+
+onMounted(async () => {
+  try {
+    const response = await fetch('/imdbapi.json')
+    imdbResults.value = await response.json()
+  } catch (error) {
+    console.error('Failed to load imbdapi.json', error)
+    return
+  }
+})
+</script>
+
+<style>
+.leds2 {
+  --yellow-circle-27: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='%23ffff00'/%3E%3C/svg%3E");
+  background-image: var(--yellow-circle-27); /* bg-repeat-space */
+}
+.leds {
+  border-image-slice: 33.33%;
+  border-image-repeat: space;
+  border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'%3E%3Cg fill='%23FFD400'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3Ccircle cx='144' cy='48' r='32'/%3E%3Ccircle cx='240' cy='48' r='32'/%3E%3Ccircle cx='48' cy='144' r='32'/%3E%3Ccircle cx='144' cy='144' r='32'/%3E%3Ccircle cx='240' cy='144' r='32'/%3E%3Ccircle cx='48' cy='240' r='32'/%3E%3Ccircle cx='144' cy='240' r='32'/%3E%3Ccircle cx='240' cy='240' r='32'/%3E%3C/g%3E%3C/svg%3E");
+}
+.leds-off {
+  border-image-slice: 33.33%;
+  border-image-repeat: space;
+  border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'%3E%3Cg fill='%23322A00'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3Ccircle cx='144' cy='48' r='32'/%3E%3Ccircle cx='240' cy='48' r='32'/%3E%3Ccircle cx='48' cy='144' r='32'/%3E%3Ccircle cx='144' cy='144' r='32'/%3E%3Ccircle cx='240' cy='144' r='32'/%3E%3Ccircle cx='48' cy='240' r='32'/%3E%3Ccircle cx='144' cy='240' r='32'/%3E%3Ccircle cx='240' cy='240' r='32'/%3E%3C/g%3E%3C/svg%3E");
+}
+@keyframes pulse {
+  0%,
+  94%,
+  97% {
+    border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'%3E%3Cg fill='%23FFD400'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3Ccircle cx='144' cy='48' r='32'/%3E%3Ccircle cx='240' cy='48' r='32'/%3E%3Ccircle cx='48' cy='144' r='32'/%3E%3Ccircle cx='144' cy='144' r='32'/%3E%3Ccircle cx='240' cy='144' r='32'/%3E%3Ccircle cx='48' cy='240' r='32'/%3E%3Ccircle cx='144' cy='240' r='32'/%3E%3Ccircle cx='240' cy='240' r='32'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  95%,
+  99% {
+    border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'%3E%3Cg fill='%23322A00'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3Ccircle cx='144' cy='48' r='32'/%3E%3Ccircle cx='240' cy='48' r='32'/%3E%3Ccircle cx='48' cy='144' r='32'/%3E%3Ccircle cx='144' cy='144' r='32'/%3E%3Ccircle cx='240' cy='144' r='32'/%3E%3Ccircle cx='48' cy='240' r='32'/%3E%3Ccircle cx='144' cy='240' r='32'/%3E%3Ccircle cx='240' cy='240' r='32'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+</style>
