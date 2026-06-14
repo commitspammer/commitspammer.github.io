@@ -1,5 +1,9 @@
 <template>
-  <div class="relative w-full bg-stone-800" style="filter: drop-shadow(0 5px 5px #000)">
+  <div
+    @click="selected = !selected"
+    class="relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
+    style="filter: drop-shadow(0 5px 5px #000)"
+  >
     <div
       class="border-16 md:border-32"
       :class="[watched ? 'leds' : 'leds-off']"
@@ -12,14 +16,14 @@
       <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
         <div class="">
           <img
-            v-if="getImdbPoster(title)"
+            v-if="getImdbPoster(title) && !selected"
             :src="getImdbPoster(title)"
             alt=""
             class="object-cover aspect-68/100"
           />
           <div
             v-else
-            class="aspect-68/100 flex items-center justify-center text-center text-sm md:text-xl"
+            class="aspect-68/100 select-none flex items-center justify-center text-center text-sm md:text-xl"
           >
             {{ title }}
           </div>
@@ -28,7 +32,7 @@
           <StarRating
             :rating="rating"
             :watched="watched"
-            class="size-20 md:size-32 text-2xl md:text-4xl"
+            class="size-20 md:size-32 text-2xl md:text-4xl select-none group-hover:opacity-5 transition duration-300 ease-in-out"
           />
         </div>
       </div>
@@ -55,6 +59,8 @@ defineProps({
 //    '⯫'.repeat(halfRating - Math.floor(halfRating) > 0 ? 1 : 0) +
 //    '★'.repeat(halfRating),
 //)
+
+const selected = ref(false)
 
 const imdbResults = ref(null)
 
