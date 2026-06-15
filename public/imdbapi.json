@@ -32,20 +32,19 @@
     }
   },
   {
-    "id": "tt7221388",
-    "type": "tvSeries",
-    "primaryTitle": "Cobra Kai",
-    "originalTitle": "Cobra Kai",
+    "id": "tt0090859",
+    "type": "movie",
+    "primaryTitle": "Cobra",
+    "originalTitle": "Cobra",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BYjA3NDkwNzktNjJkYi00ODNhLWFhYzQtYzk5NjU4MDM0OWZmXkEyXkFqcGc@._V1_.jpg",
-      "width": 1728,
-      "height": 2560
+      "url": "https://m.media-amazon.com/images/M/MV5BODczYzNiMjgtZGU4Yi00ZmM2LWFiNzMtMjcyMTA1YzMwNTk3XkEyXkFqcGc@._V1_.jpg",
+      "width": 1073,
+      "height": 1600
     },
-    "startYear": 2018,
-    "endYear": 2025,
+    "startYear": 1986,
     "rating": {
-      "aggregateRating": 8.4,
-      "voteCount": 243753
+      "aggregateRating": 5.8,
+      "voteCount": 85933
     }
   },
   {
@@ -337,19 +336,19 @@
     }
   },
   {
-    "id": "tt15239678",
+    "id": "tt1160419",
     "type": "movie",
-    "primaryTitle": "Dune: Part Two",
-    "originalTitle": "Dune: Part Two",
+    "primaryTitle": "Dune: Part One",
+    "originalTitle": "Dune: Part One",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg",
-      "width": 2764,
-      "height": 4096
+      "url": "https://m.media-amazon.com/images/M/MV5BNWIyNmU5MGYtZDZmNi00ZjAwLWJlYjgtZTc0ZGIxMDE4ZGYwXkEyXkFqcGc@._V1_.jpg",
+      "width": 1728,
+      "height": 2552
     },
-    "startYear": 2024,
+    "startYear": 2021,
     "rating": {
-      "aggregateRating": 8.4,
-      "voteCount": 759417
+      "aggregateRating": 8,
+      "voteCount": 1060521
     }
   },
   {
@@ -465,19 +464,19 @@
     }
   },
   {
-    "id": "tt17163970",
+    "id": "tt0312004",
     "type": "movie",
-    "primaryTitle": "Wallace & Gromit: Vengeance Most Fowl",
-    "originalTitle": "Wallace & Gromit: Vengeance Most Fowl",
+    "primaryTitle": "Wallace & Gromit: The Curse of the Were-Rabbit",
+    "originalTitle": "The Curse of the Were-Rabbit",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMTk3M2YwMGUtZDJiZS00MDNkLWIyZDEtY2VjMWYyZDFmZjMzXkEyXkFqcGc@._V1_.jpg",
-      "width": 1080,
-      "height": 1350
+      "url": "https://m.media-amazon.com/images/M/MV5BM2JkOTRkZTctN2ZiMy00ZGRmLWJkNzQtOGJkNmFiM2ZjNjYzXkEyXkFqcGc@._V1_.jpg",
+      "width": 1168,
+      "height": 1706
     },
-    "startYear": 2024,
+    "startYear": 2005,
     "rating": {
       "aggregateRating": 7.5,
-      "voteCount": 41815
+      "voteCount": 157664
     }
   },
   {
@@ -722,30 +721,35 @@
     }
   },
   {
-    "id": "tt13210838",
-    "type": "tvSeries",
+    "id": "tt8367814",
+    "type": "movie",
     "primaryTitle": "The Gentlemen",
     "originalTitle": "The Gentlemen",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMzM0YzFhMTYtYjZkNS00MWRmLTg2ZDgtY2MzYjQ5ODVmOTI1XkEyXkFqcGc@._V1_.jpg",
-      "width": 1500,
-      "height": 2222
+      "url": "https://m.media-amazon.com/images/M/MV5BMjE2ZjQ4ZGMtZjFhMi00NmI5LTliNjEtODczMWMxNjliZjgxXkEyXkFqcGc@._V1_.jpg",
+      "width": 8100,
+      "height": 12000
     },
-    "startYear": 2024,
+    "startYear": 2019,
     "rating": {
-      "aggregateRating": 8,
-      "voteCount": 178750
+      "aggregateRating": 7.8,
+      "voteCount": 458556
     }
   },
   {
-    "id": "tt22141820",
+    "id": "tt0988045",
     "type": "movie",
-    "primaryTitle": "Desi Sherlock Homes",
-    "originalTitle": "Desi Sherlock Homes",
+    "primaryTitle": "Sherlock Holmes",
+    "originalTitle": "Sherlock Holmes",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BZWUzNWI0MTMtOTk3Ny00MTgwLWI4NmMtMWMxZTUzZTA4YTc5XkEyXkFqcGc@._V1_.jpg",
-      "width": 1920,
-      "height": 1080
+      "url": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_.jpg",
+      "width": 1205,
+      "height": 1800
+    },
+    "startYear": 2009,
+    "rating": {
+      "aggregateRating": 7.5,
+      "voteCount": 707405
     }
   },
   {
@@ -1354,19 +1358,19 @@
     }
   },
   {
-    "id": "tt1853728",
+    "id": "tt0060315",
     "type": "movie",
-    "primaryTitle": "Django Unchained",
-    "originalTitle": "Django Unchained",
+    "primaryTitle": "Django",
+    "originalTitle": "Django",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg",
-      "width": 1382,
-      "height": 2048
+      "url": "https://m.media-amazon.com/images/M/MV5BZWVmN2NjOTMtMjZiNy00NDU2LTk3OTgtODFkYWQ2MDFiYzAwXkEyXkFqcGc@._V1_.jpg",
+      "width": 736,
+      "height": 1016
     },
-    "startYear": 2012,
+    "startYear": 1966,
     "rating": {
-      "aggregateRating": 8.5,
-      "voteCount": 1887749
+      "aggregateRating": 7.2,
+      "voteCount": 34251
     }
   },
   {
@@ -1563,19 +1567,19 @@
     }
   },
   {
-    "id": "tt31227572",
+    "id": "tt0093773",
     "type": "movie",
-    "primaryTitle": "Predator: Badlands",
-    "originalTitle": "Predator: Badlands",
+    "primaryTitle": "Predator",
+    "originalTitle": "Predator",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BNTdjZGUxMTItNjRkNS00N2VhLWE4MjMtMjVhODMwMGIxNjUwXkEyXkFqcGc@._V1_.jpg",
-      "width": 2025,
-      "height": 3000
+      "url": "https://m.media-amazon.com/images/M/MV5BOWEzMDI0MTUtMjQ0Yy00MGRhLWI4YjAtZTgzZTM3NTYxZGJkXkEyXkFqcGc@._V1_.jpg",
+      "width": 1521,
+      "height": 2265
     },
-    "startYear": 2025,
+    "startYear": 1987,
     "rating": {
-      "aggregateRating": 7.2,
-      "voteCount": 153702
+      "aggregateRating": 7.8,
+      "voteCount": 501856
     }
   },
   {
@@ -1886,16 +1890,20 @@
     }
   },
   {
-    "id": "tt27995870",
+    "id": "tt1670345",
     "type": "movie",
-    "primaryTitle": "Now You See Me...",
-    "originalTitle": "Nicolás de Jesús' Now You See Me",
+    "primaryTitle": "Now You See Me",
+    "originalTitle": "Now You See Me",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BNTAxMjkyZmUtNmRjMC00MmJiLTljMjEtMGJjMGQxMjFlMjNhXkEyXkFqcGc@._V1_.jpg",
-      "width": 2000,
-      "height": 3000
+      "url": "https://m.media-amazon.com/images/M/MV5BMTY0NDY3MDMxN15BMl5BanBnXkFtZTcwOTM5NzMzOQ@@._V1_.jpg",
+      "width": 1315,
+      "height": 2048
     },
-    "startYear": 2025
+    "startYear": 2013,
+    "rating": {
+      "aggregateRating": 7.2,
+      "voteCount": 772316
+    }
   },
   {
     "id": "tt1037705",
@@ -2554,13 +2562,6 @@
     }
   },
   {
-    "id": "tt3355500",
-    "type": "movie",
-    "primaryTitle": "The Trial of Socrates",
-    "originalTitle": "The Trial of Socrates",
-    "startYear": 2013
-  },
-  {
     "id": "tt1104001",
     "type": "movie",
     "primaryTitle": "Tron: Legacy",
@@ -2657,6 +2658,22 @@
     }
   },
   {
+    "id": "tt0441773",
+    "type": "movie",
+    "primaryTitle": "Kung Fu Panda",
+    "originalTitle": "Kung Fu Panda",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BZDU5MDNiMGItYjVmZi00NDUxLTg2OTktNGE0NzNlNzM4NzgyXkEyXkFqcGc@._V1_.jpg",
+      "width": 1413,
+      "height": 2048
+    },
+    "startYear": 2008,
+    "rating": {
+      "aggregateRating": 7.6,
+      "voteCount": 581809
+    }
+  },
+  {
     "id": "tt1302011",
     "type": "movie",
     "primaryTitle": "Kung Fu Panda 2",
@@ -2670,6 +2687,22 @@
     "rating": {
       "aggregateRating": 7.3,
       "voteCount": 358382
+    }
+  },
+  {
+    "id": "tt2267968",
+    "type": "movie",
+    "primaryTitle": "Kung Fu Panda 3",
+    "originalTitle": "Kung Fu Panda 3",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTUyNzgxNjg2M15BMl5BanBnXkFtZTgwMTY1NDI1NjE@._V1_.jpg",
+      "width": 660,
+      "height": 978
+    },
+    "startYear": 2016,
+    "rating": {
+      "aggregateRating": 7.1,
+      "voteCount": 219340
     }
   },
   {
@@ -3105,20 +3138,19 @@
     }
   },
   {
-    "id": "tt2802850",
-    "type": "tvSeries",
+    "id": "tt0116282",
+    "type": "movie",
     "primaryTitle": "Fargo",
     "originalTitle": "Fargo",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BMjMzMTIzMTUwN15BMl5BanBnXkFtZTgwNjE0NTg0MTE@._V1_.jpg",
-      "width": 437,
-      "height": 653
+      "url": "https://m.media-amazon.com/images/M/MV5BNjg4MWE0MjEtODFhNy00MjA5LTg5ODktMzgwNWFmZTAwNjBlXkEyXkFqcGc@._V1_.jpg",
+      "width": 1313,
+      "height": 1938
     },
-    "startYear": 2014,
-    "endYear": 2024,
+    "startYear": 1996,
     "rating": {
-      "aggregateRating": 8.8,
-      "voteCount": 470001
+      "aggregateRating": 8.1,
+      "voteCount": 787936
     }
   },
   {

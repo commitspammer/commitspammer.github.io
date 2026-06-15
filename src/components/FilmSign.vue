@@ -18,7 +18,6 @@
           <img
             v-if="getImdbPoster(id) && !selected"
             :src="getImdbPoster(id)"
-            alt=""
             class="object-cover aspect-68/100"
           />
           <div
@@ -44,8 +43,8 @@
 import { ref, /*computed,*/ onMounted } from 'vue'
 import StarRating from './StarRating.vue'
 
-//defineProps({
-const props = defineProps({
+//const props = defineProps({
+defineProps({
   id: String,
   rank: Number,
   title: String,
