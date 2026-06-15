@@ -8,6 +8,7 @@
       <FilmSign
         v-for="(f, index) in watchedThenUnwatchedFilms"
         :key="f.name"
+        :id="f.id"
         :rank="index + 1"
         :title="f.name"
         :rating="f.rating"
@@ -27,14 +28,6 @@ const watchedThenUnwatchedFilms = computed(() =>
   films.value.filter((f) => f.watched).concat(films.value.filter((f) => !f.watched)),
 )
 const sortMode = ref(null)
-
-//const sortRatingPressedClass = computed(() =>
-//  sortMode.value === 'rating' ? ['bg-red-950', 'text-white'] : ['hover:bg-yellow-300'],
-//)
-
-//const sortAlphabetPressedClass = computed(() =>
-//  sortMode.value === 'alphabet' ? ['bg-red-950', 'text-white'] : ['hover:bg-yellow-300'],
-//)
 
 const sortFilmsByRating = () => {
   sortMode.value = 'rating'

@@ -16,8 +16,8 @@
       <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
         <div class="">
           <img
-            v-if="getImdbPoster(title) && !selected"
-            :src="getImdbPoster(title)"
+            v-if="getImdbPoster(id) && !selected"
+            :src="getImdbPoster(id)"
             alt=""
             class="object-cover aspect-68/100"
           />
@@ -44,8 +44,9 @@
 import { ref, /*computed,*/ onMounted } from 'vue'
 import StarRating from './StarRating.vue'
 
-//const props = defineProps({
-defineProps({
+//defineProps({
+const props = defineProps({
+  id: String,
   rank: Number,
   title: String,
   rating: [String, Number], //it's a union type
@@ -64,8 +65,8 @@ const selected = ref(false)
 
 const imdbResults = ref(null)
 
-const getImdbPoster = (title) => {
-  return imdbResults.value?.filter((item) => item.query === title)[0]?.titles[0]?.primaryImage.url
+const getImdbPoster = (id) => {
+  return imdbResults.value?.find((r) => r?.id === id)?.primaryImage.url
 }
 
 onMounted(async () => {
