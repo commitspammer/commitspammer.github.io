@@ -72,22 +72,12 @@
   { "name": "Fight Club", "watched": false, "rating": 0, "id": "tt0137523" },
   { "name": "Hoodwinked", "watched": false, "rating": 0, "id": "tt0443536" },
   { "name": "Midnight in Paris", "watched": false, "rating": 0, "id": "tt1605783" },
-  {
-    "name": "Van Helsing (2004)",
-    "watched": true,
-    "rating": 6.7,
-    "id": "tt0338526"
-  },
+  { "name": "Van Helsing (2004)", "watched": true, "rating": 6.7, "id": "tt0338526" },
   { "name": "Monty Python", "watched": true, "rating": 4.6, "id": "tt0071853" },
   { "name": "V for Vendetta", "watched": true, "rating": 2.5, "id": "tt0434409" },
   { "name": "Knives Out", "watched": true, "rating": 6.8, "id": "tt8946378" },
   { "name": "Glass Onion", "watched": true, "rating": 6.2, "id": "tt11564570" },
-  {
-    "name": "Wake Up Dead Man",
-    "watched": true,
-    "rating": 10,
-    "id": "tt14364480"
-  },
+  { "name": "Wake Up Dead Man", "watched": true, "rating": 10, "id": "tt14364480" },
   { "name": "Rango", "watched": false, "rating": 0, "id": "tt1192628" },
   { "name": "Puss in Boots: The Last Wish", "watched": false, "rating": 0, "id": "tt3915174" },
   { "name": "Fantastic Mr. Fox", "watched": false, "rating": 0, "id": "tt0432283" },
@@ -124,7 +114,6 @@
   { "name": "The Irishman", "watched": false, "rating": 0, "id": "tt1302006" },
   { "name": "American Pie", "watched": true, "rating": 5.3, "id": "tt0163651" },
   { "name": "Hellraiser", "watched": true, "rating": 3.5, "id": "tt0093177" },
-  { "name": "Hellraiser: Judgment", "watched": false, "rating": 0, "id": "tt5476182" },
   { "name": "Hellraiser (2022)", "watched": true, "rating": 3.5, "id": "tt0887261" },
   { "name": "The Crow", "watched": true, "rating": 4.5, "id": "tt0109506" },
   { "name": "Predator (1987)", "watched": false, "rating": 0, "id": "tt0093773" },
@@ -159,12 +148,7 @@
   { "name": "American Made", "watched": true, "rating": 7.9, "id": "tt3532216" },
   { "name": "True Detective (S1)", "watched": true, "rating": 9.2, "id": "tt2356777" },
   { "name": "Death on The Nile (1978)", "watched": false, "rating": 0, "id": "tt0077413" },
-  {
-    "name": "Now You See Me",
-    "watched": false,
-    "rating": 0,
-    "id": "tt1670345"
-  },
+  { "name": "Now You See Me", "watched": false, "rating": 0, "id": "tt1670345" },
   { "name": "The Book of Eli", "watched": false, "rating": 0, "id": "tt1037705" },
   { "name": "Catch Me If You Can", "watched": true, "rating": 8.1, "id": "tt0264464" },
   {
@@ -256,7 +240,7 @@
   { "name": "Spaceman", "watched": false, "rating": 0, "id": "tt11097384" },
   { "name": "1917", "watched": true, "rating": 9.7, "id": "tt8579674" },
   { "name": "Dunkirk", "watched": false, "rating": 0, "id": "tt5013056" },
-  { "name": "Balls Up", "watched": true, "rating": 1, "id": "tt26735622" },
+  { "name": "Balls Up", "watched": true, "rating": 0, "id": "tt26735622" },
   { "name": "Fargo", "watched": true, "rating": 6.4, "id": "tt0116282" },
   { "name": "From", "watched": false, "rating": 0, "id": "tt9813792" },
   { "name": "Backrooms", "watched": true, "rating": 7.6, "id": "tt26657236" },
@@ -266,5 +250,6 @@
   { "name": "Mr. Peabody & Sherman", "watched": false, "rating": 0, "id": "tt0864835" },
   { "name": "The Running Man", "watched": true, "rating": 3.9, "id": "tt14107334" },
   { "name": "My Little Pony: The Movie", "watched": true, "rating": 2.4, "id": "tt4131800" },
-  { "name": "Batman Begins", "watched": true, "rating": 8.7, "id": "tt0372784" }
+  { "name": "Batman Begins", "watched": true, "rating": 8.7, "id": "tt0372784" },
+  { "name": "The Dark Knight Rises", "watched": false, "rating": 0, "id": "tt1345836" }
 ]
