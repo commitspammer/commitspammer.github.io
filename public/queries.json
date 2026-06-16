@@ -8379,5 +8379,448 @@
         "rating": { "aggregateRating": 6.7, "voteCount": 13428 }
       }
     ]
+  },
+  {
+    "query": "The Snoopy Show",
+    "titles": [
+      {
+        "id": "tt13206602",
+        "type": "tvSeries",
+        "primaryTitle": "The Snoopy Show",
+        "originalTitle": "The Snoopy Show",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNmEyNzAwYjMtNTQxYi00NTQ0LTkxMjktM2RkMzA1YmY4MDllXkEyXkFqcGc@._V1_.jpg",
+          "width": 1080,
+          "height": 1900
+        },
+        "startYear": 2021,
+        "endYear": 2023,
+        "rating": { "aggregateRating": 8.1, "voteCount": 1017 }
+      },
+      {
+        "id": "tt0084996",
+        "type": "tvSeries",
+        "primaryTitle": "The Charlie Brown and Snoopy Show",
+        "originalTitle": "The Charlie Brown and Snoopy Show",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BM2FkZTFhNDItNzNkMy00YzE4LTk0Y2QtOTkwY2M0NDRkZmEwXkEyXkFqcGc@._V1_.jpg",
+          "width": 338,
+          "height": 486
+        },
+        "startYear": 1983,
+        "endYear": 1985,
+        "rating": { "aggregateRating": 7.4, "voteCount": 2102 }
+      },
+      {
+        "id": "tt0074053",
+        "type": "tvSeries",
+        "primaryTitle": "The Scooby-Doo Show",
+        "originalTitle": "The Scooby-Doo Show",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNjA5OTc3NzktY2RmOS00NGRhLWE1MDctZmQyZjkwZjRkY2EwXkEyXkFqcGc@._V1_.jpg",
+          "width": 1080,
+          "height": 1417
+        },
+        "startYear": 1976,
+        "endYear": 1978,
+        "rating": { "aggregateRating": 7.7, "voteCount": 4619 }
+      }
+    ]
+  },
+  { "query": "Hellraiser: Judgment", "titles": [] },
+  {
+    "query": "Mr. Peabody & Sherman",
+    "titles": [
+      {
+        "id": "tt0864835",
+        "type": "movie",
+        "primaryTitle": "Mr. Peabody & Sherman",
+        "originalTitle": "Mr. Peabody & Sherman",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BZWMyODZlZTktNWE0Ny00YzUzLWFkOTQtZjFjYjA5ZWMyZmU0XkEyXkFqcGc@._V1_.jpg",
+          "width": 2000,
+          "height": 3000
+        },
+        "startYear": 2014,
+        "rating": { "aggregateRating": 6.8, "voteCount": 84473 }
+      },
+      {
+        "id": "tt5021206",
+        "type": "tvSeries",
+        "primaryTitle": "The Mr. Peabody & Sherman Show",
+        "originalTitle": "The Mr. Peabody & Sherman Show",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BM2FlOWMxZDUtM2Q5Ni00NzE0LWIyZTEtZjY3YmMxYzMyZTAzXkEyXkFqcGc@._V1_.jpg",
+          "width": 551,
+          "height": 768
+        },
+        "startYear": 2015,
+        "endYear": 2017,
+        "rating": { "aggregateRating": 5.8, "voteCount": 683 }
+      },
+      {
+        "id": "tt0040614",
+        "type": "movie",
+        "primaryTitle": "Mr. Peabody and the Mermaid",
+        "originalTitle": "Mr. Peabody and the Mermaid",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BODMxMTQ2ZTMtZGFkMC00ZGVlLWJmZTAtNDIwMzcxMmY3YjQxXkEyXkFqcGc@._V1_.jpg",
+          "width": 491,
+          "height": 773
+        },
+        "startYear": 1948,
+        "rating": { "aggregateRating": 6.4, "voteCount": 1612 }
+      }
+    ]
+  },
+  {
+    "query": "Prisoners",
+    "titles": [
+      {
+        "id": "tt1392214",
+        "type": "movie",
+        "primaryTitle": "Prisoners",
+        "originalTitle": "Prisoners",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_.jpg",
+          "width": 1384,
+          "height": 2048
+        },
+        "startYear": 2013,
+        "rating": { "aggregateRating": 8.2, "voteCount": 939946 }
+      },
+      {
+        "id": "tt6372694",
+        "type": "movie",
+        "primaryTitle": "Prisoners of the Ghostland",
+        "originalTitle": "Prisoners of the Ghostland",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BOTAyODlkYjgtN2NjMi00NzA2LTlmNGItNDYyNzNlNDBmZDJhXkEyXkFqcGc@._V1_.jpg",
+          "width": 1365,
+          "height": 2048
+        },
+        "startYear": 2021,
+        "rating": { "aggregateRating": 4.2, "voteCount": 15783 }
+      },
+      {
+        "id": "tt1676462",
+        "type": "tvSeries",
+        "primaryTitle": "Prisoners of War",
+        "originalTitle": "Hatufim",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BZDJjNWNmNTgtZTI4OS00ZDE4LTk0MTUtZDE0ZTNjZDdiOWQzXkEyXkFqcGc@._V1_.jpg",
+          "width": 384,
+          "height": 512
+        },
+        "startYear": 2009,
+        "endYear": 2012,
+        "rating": { "aggregateRating": 8.3, "voteCount": 2953 }
+      }
+    ]
+  },
+  {
+    "query": "The Departed",
+    "titles": [
+      {
+        "id": "tt0407887",
+        "type": "movie",
+        "primaryTitle": "The Departed",
+        "originalTitle": "The Departed",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_.jpg",
+          "width": 450,
+          "height": 665
+        },
+        "startYear": 2006,
+        "rating": { "aggregateRating": 8.5, "voteCount": 1558565 }
+      },
+      {
+        "id": "tt7099552",
+        "type": "tvSeries",
+        "primaryTitle": "The Departed",
+        "originalTitle": "Gorod",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BYmE2NDE1ZjMtZDE2ZS00MGU1LWJiN2MtYjYxY2YyZTkyMzAyXkEyXkFqcGc@._V1_.jpg",
+          "width": 1837,
+          "height": 2598
+        },
+        "startYear": 2017,
+        "endYear": 2018,
+        "rating": { "aggregateRating": 7.5, "voteCount": 101 }
+      },
+      {
+        "id": "tt10922712",
+        "type": "tvSeries",
+        "primaryTitle": "The Departed",
+        "originalTitle": "Gurzuf",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BYTRjMGY2YzUtNDYxMC00ZmJiLWIyODctZmE3Yzg0ZDYzODk3XkEyXkFqcGc@._V1_.jpg",
+          "width": 1134,
+          "height": 1588
+        },
+        "startYear": 2018,
+        "endYear": 2018,
+        "rating": { "aggregateRating": 7, "voteCount": 78 }
+      }
+    ]
+  },
+  {
+    "query": "Batman Begins",
+    "titles": [
+      {
+        "id": "tt0372784",
+        "type": "movie",
+        "primaryTitle": "Batman Begins",
+        "originalTitle": "Batman Begins",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMzA2NDQzZDEtNDU5Ni00YTlkLTg2OWEtYmQwM2Y1YTBjMjFjXkEyXkFqcGc@._V1_.jpg",
+          "width": 1013,
+          "height": 1500
+        },
+        "startYear": 2005,
+        "rating": { "aggregateRating": 8.2, "voteCount": 1719727 }
+      },
+      {
+        "id": "tt0468569",
+        "type": "movie",
+        "primaryTitle": "The Dark Knight",
+        "originalTitle": "The Dark Knight",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
+          "width": 1383,
+          "height": 2048
+        },
+        "startYear": 2008,
+        "rating": { "aggregateRating": 9.1, "voteCount": 3178011 }
+      },
+      {
+        "id": "tt1074939",
+        "type": "tvMovie",
+        "primaryTitle": "Batman Begins: Behind the Mask",
+        "originalTitle": "Batman Begins: Behind the Mask",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BOTA5ZmExMDQtMWE0NC00NDA2LWEwNWQtZWJhNjY0MjYwNmY3XkEyXkFqcGc@._V1_.jpg",
+          "width": 1280,
+          "height": 797
+        },
+        "startYear": 2005,
+        "rating": { "aggregateRating": 7.3, "voteCount": 61 }
+      }
+    ]
+  },
+  {
+    "query": "Memento",
+    "titles": [
+      {
+        "id": "tt0209144",
+        "type": "movie",
+        "primaryTitle": "Memento",
+        "originalTitle": "Memento",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMGQ3Y2Q4NjktN2E4Ny00Y2Q2LTliZDUtZTNiNjRhY2I0NGIyXkEyXkFqcGc@._V1_.jpg",
+          "width": 998,
+          "height": 1500
+        },
+        "startYear": 2000,
+        "rating": { "aggregateRating": 8.4, "voteCount": 1437865 }
+      },
+      {
+        "id": "tt22169620",
+        "type": "tvSeries",
+        "primaryTitle": "Memento Mori",
+        "originalTitle": "Memento Mori",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BOTE0M2NlNWQtMzNhZi00YWFhLWEzYmEtYjZkZGIyOGFlOTg4XkEyXkFqcGc@._V1_.jpg",
+          "width": 809,
+          "height": 1200
+        },
+        "startYear": 2023,
+        "endYear": 2025,
+        "rating": { "aggregateRating": 6.2, "voteCount": 934 }
+      },
+      {
+        "id": "tt2380307",
+        "type": "movie",
+        "primaryTitle": "Coco",
+        "originalTitle": "Coco",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMDIyM2E2NTAtMzlhNy00ZGUxLWI1NjgtZDY5MzhiMDc5NGU3XkEyXkFqcGc@._V1_.jpg",
+          "width": 1984,
+          "height": 2835
+        },
+        "startYear": 2017,
+        "rating": { "aggregateRating": 8.4, "voteCount": 711357 }
+      }
+    ]
+  },
+  {
+    "query": "Van Helsing (2004)",
+    "titles": [
+      {
+        "id": "tt0338526",
+        "type": "movie",
+        "primaryTitle": "Van Helsing",
+        "originalTitle": "Van Helsing",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNDk3NTdlYzQtMjhiMy00MWJkLWFjNDctMzE4ZGEwZWExNGViXkEyXkFqcGc@._V1_.jpg",
+          "width": 621,
+          "height": 900
+        },
+        "startYear": 2004,
+        "rating": { "aggregateRating": 6.1, "voteCount": 307661 }
+      },
+      {
+        "id": "tt0367677",
+        "type": "movie",
+        "primaryTitle": "Dracula 3000",
+        "originalTitle": "Dracula 3000",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BZTI3NmUzZWMtMTJjMy00MGRhLWExZmEtZGE4ZmVkY2I2YjJhXkEyXkFqcGc@._V1_.jpg",
+          "width": 375,
+          "height": 500
+        },
+        "startYear": 2004,
+        "rating": { "aggregateRating": 2.1, "voteCount": 6872 }
+      },
+      {
+        "id": "tt0409429",
+        "type": "tvMovie",
+        "primaryTitle": "Van Helsing: The Man and the Monsters",
+        "originalTitle": "Van Helsing: The Man and the Monsters",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNGFlMGI3MmQtMDAxZC00YjYwLTg5MzgtNDc4OThkZTNmNDBjXkEyXkFqcGc@._V1_.jpg",
+          "width": 748,
+          "height": 1008
+        },
+        "startYear": 2004,
+        "rating": { "aggregateRating": 6.9, "voteCount": 76 }
+      }
+    ]
+  },
+  {
+    "query": "The Running Man",
+    "titles": [
+      {
+        "id": "tt14107334",
+        "type": "movie",
+        "primaryTitle": "The Running Man",
+        "originalTitle": "The Running Man",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTk5NjU4OTAtNTEyMS00ZjBiLTg0ZjMtOGJiMGJhNjQ3MzYxXkEyXkFqcGc@._V1_.jpg",
+          "width": 2025,
+          "height": 3000
+        },
+        "startYear": 2025,
+        "rating": { "aggregateRating": 6.4, "voteCount": 110609 }
+      },
+      {
+        "id": "tt0093894",
+        "type": "movie",
+        "primaryTitle": "The Running Man",
+        "originalTitle": "The Running Man",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMDQwYzMwMDItYzFhZC00YjkzLTlmODAtMzg3NDFlNDhhZjYzXkEyXkFqcGc@._V1_.jpg",
+          "width": 936,
+          "height": 1361
+        },
+        "startYear": 1987,
+        "rating": { "aggregateRating": 6.6, "voteCount": 191680 }
+      },
+      {
+        "id": "tt0057463",
+        "type": "movie",
+        "primaryTitle": "The Running Man",
+        "originalTitle": "The Running Man",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMWQ0OGE1NzYtM2Y4NS00MmYyLTgzNmItODdjN2ExMjZlY2M5XkEyXkFqcGc@._V1_.jpg",
+          "width": 798,
+          "height": 1200
+        },
+        "startYear": 1963,
+        "rating": { "aggregateRating": 6.5, "voteCount": 2244 }
+      }
+    ]
+  },
+  {
+    "query": "V for Vendetta",
+    "titles": [
+      {
+        "id": "tt0434409",
+        "type": "movie",
+        "primaryTitle": "V for Vendetta",
+        "originalTitle": "V for Vendetta",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BZDEwOTRjNjgtOGY0MC00NGYxLWFmYmQtNjc1ZjVhMTc0OWUxXkEyXkFqcGc@._V1_.jpg",
+          "width": 1378,
+          "height": 2029
+        },
+        "startYear": 2005,
+        "rating": { "aggregateRating": 8.1, "voteCount": 1248355 }
+      },
+      {
+        "id": "tt38913775",
+        "type": "tvSeries",
+        "primaryTitle": "V for Vendetta",
+        "originalTitle": "V for Vendetta"
+      },
+      {
+        "id": "tt0775408",
+        "type": "tvMovie",
+        "primaryTitle": "'V for Vendetta' Unmasked",
+        "originalTitle": "'V for Vendetta' Unmasked",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMDI2MzUwNDQtMDg5ZC00MWQ2LWE1NGItYzRkNTI0ZjAwZjJjXkEyXkFqcGc@._V1_.jpg",
+          "width": 679,
+          "height": 999
+        },
+        "startYear": 2006,
+        "rating": { "aggregateRating": 7.6, "voteCount": 440 }
+      }
+    ]
+  },
+  {
+    "query": "My Little Pony: The Movie",
+    "titles": [
+      {
+        "id": "tt4131800",
+        "type": "movie",
+        "primaryTitle": "My Little Pony: The Movie",
+        "originalTitle": "My Little Pony: The Movie",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNDZiNDRlNGQtNGQ4Ny00NDRiLTkwOWItZDJlZTQ4YTlmM2M3XkEyXkFqcGc@._V1_.jpg",
+          "width": 1347,
+          "height": 2048
+        },
+        "startYear": 2017,
+        "rating": { "aggregateRating": 6.1, "voteCount": 9032 }
+      },
+      {
+        "id": "tt0091584",
+        "type": "movie",
+        "primaryTitle": "My Little Pony: The Movie",
+        "originalTitle": "My Little Pony: The Movie",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNjUzODRmODEtOTFkOS00MjZlLWIzZjUtOWViY2ExOTA3MzhlXkEyXkFqcGc@._V1_.jpg",
+          "width": 1492,
+          "height": 2212
+        },
+        "startYear": 1986,
+        "rating": { "aggregateRating": 6, "voteCount": 3082 }
+      },
+      {
+        "id": "tt1751105",
+        "type": "tvSeries",
+        "primaryTitle": "My Little Pony: Friendship Is Magic",
+        "originalTitle": "My Little Pony: Friendship Is Magic",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BZjhkNzBmMDAtMTBiNy00NGIxLThlN2EtMTJlZDEzZjIzYWUyXkEyXkFqcGc@._V1_.jpg",
+          "width": 1527,
+          "height": 1987
+        },
+        "startYear": 2010,
+        "endYear": 2019,
+        "rating": { "aggregateRating": 7.8, "voteCount": 26091 }
+      }
+    ]
   }
 ]

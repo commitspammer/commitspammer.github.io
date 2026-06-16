@@ -18,6 +18,7 @@
           <img
             v-if="getImdbPoster(id) && !selected"
             :src="getImdbPoster(id)"
+            :loading="rank > 15 ? 'lazy' : 'eager'"
             class="object-cover aspect-68/100"
           />
           <div

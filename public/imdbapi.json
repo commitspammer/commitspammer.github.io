@@ -512,20 +512,17 @@
     }
   },
   {
-    "id": "tt4465668",
+    "id": "tt0209144",
     "type": "movie",
-    "primaryTitle": "Remember Amnesia",
-    "originalTitle": "Remember Amnesia",
+    "primaryTitle": "Memento",
+    "originalTitle": "Memento",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BNWMzYjUyMjYtNzZhNS00MGEwLWJiNzctYjlmYmI5NjljN2E0XkEyXkFqcGc@._V1_.jpg",
-      "width": 931,
-      "height": 1280
+      "url": "https://m.media-amazon.com/images/M/MV5BMGQ3Y2Q4NjktN2E4Ny00Y2Q2LTliZDUtZTNiNjRhY2I0NGIyXkEyXkFqcGc@._V1_.jpg",
+      "width": 998,
+      "height": 1500
     },
-    "startYear": 2019,
-    "rating": {
-      "aggregateRating": 7.5,
-      "voteCount": 47
-    }
+    "startYear": 2000,
+    "rating": { "aggregateRating": 8.4, "voteCount": 1437865 }
   },
   {
     "id": "tt14966898",
@@ -851,20 +848,17 @@
     }
   },
   {
-    "id": "tt5667236",
-    "type": "tvSeries",
-    "primaryTitle": "Gabriel Van Helsing",
-    "originalTitle": "Gabriel Van Helsing",
+    "id": "tt0338526",
+    "type": "movie",
+    "primaryTitle": "Van Helsing",
+    "originalTitle": "Van Helsing",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BOTY4ODk1NjItYjVjOS00NTE0LTllNWEtZTBmMzdkNjdiZDU4XkEyXkFqcGc@._V1_.jpg",
-      "width": 3456,
-      "height": 5184
+      "url": "https://m.media-amazon.com/images/M/MV5BNDk3NTdlYzQtMjhiMy00MWJkLWFjNDctMzE4ZGEwZWExNGViXkEyXkFqcGc@._V1_.jpg",
+      "width": 621,
+      "height": 900
     },
-    "startYear": 2016,
-    "rating": {
-      "aggregateRating": 5.6,
-      "voteCount": 16
-    }
+    "startYear": 2004,
+    "rating": { "aggregateRating": 6.1, "voteCount": 307661 }
   },
   {
     "id": "tt0071853",
@@ -883,20 +877,17 @@
     }
   },
   {
-    "id": "tt15745084",
+    "id": "tt0434409",
     "type": "movie",
-    "primaryTitle": "V for Vengeance",
-    "originalTitle": "V for Vengeance",
+    "primaryTitle": "V for Vendetta",
+    "originalTitle": "V for Vendetta",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BODBiNTgwM2EtYmNiOS00MzhmLWE3ZDQtMDIxNDQwZGI2ZDRmXkEyXkFqcGc@._V1_.jpg",
-      "width": 1728,
-      "height": 2304
+      "url": "https://m.media-amazon.com/images/M/MV5BZDEwOTRjNjgtOGY0MC00NGYxLWFmYmQtNjc1ZjVhMTc0OWUxXkEyXkFqcGc@._V1_.jpg",
+      "width": 1378,
+      "height": 2029
     },
-    "startYear": 2022,
-    "rating": {
-      "aggregateRating": 4.2,
-      "voteCount": 1981
-    }
+    "startYear": 2005,
+    "rating": { "aggregateRating": 8.1, "voteCount": 1248355 }
   },
   {
     "id": "tt8946378",
@@ -1208,7 +1199,20 @@
       "voteCount": 835479
     }
   },
-  {},
+  {
+    "id": "tt13206602",
+    "type": "tvSeries",
+    "primaryTitle": "The Snoopy Show",
+    "originalTitle": "The Snoopy Show",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNmEyNzAwYjMtNTQxYi00NTQ0LTkxMjktM2RkMzA1YmY4MDllXkEyXkFqcGc@._V1_.jpg",
+      "width": 1080,
+      "height": 1900
+    },
+    "startYear": 2021,
+    "endYear": 2023,
+    "rating": { "aggregateRating": 8.1, "voteCount": 1017 }
+  },
   {
     "id": "tt0138749",
     "type": "movie",
@@ -1533,7 +1537,6 @@
       "voteCount": 154126
     }
   },
-  {},
   {
     "id": "tt0887261",
     "type": "movie",
@@ -1759,7 +1762,19 @@
       "voteCount": 450549
     }
   },
-  {},
+  {
+    "id": "tt1392214",
+    "type": "movie",
+    "primaryTitle": "Prisoners",
+    "originalTitle": "Prisoners",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_.jpg",
+      "width": 1384,
+      "height": 2048
+    },
+    "startYear": 2013,
+    "rating": { "aggregateRating": 8.2, "voteCount": 939946 }
+  },
   {
     "id": "tt0993846",
     "type": "movie",
@@ -1776,7 +1791,19 @@
       "voteCount": 1794361
     }
   },
-  {},
+  {
+    "id": "tt0407887",
+    "type": "movie",
+    "primaryTitle": "The Departed",
+    "originalTitle": "The Departed",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_.jpg",
+      "width": 450,
+      "height": 665
+    },
+    "startYear": 2006,
+    "rating": { "aggregateRating": 8.5, "voteCount": 1558565 }
+  },
   {
     "id": "tt0311429",
     "type": "movie",
@@ -1938,20 +1965,108 @@
     }
   },
   {
-    "id": "tt10345782",
-    "type": "movie",
-    "primaryTitle": "The Catholic School",
-    "originalTitle": "La scuola cattolica",
+    "id": "tt0069857",
+    "type": "tvEpisode",
+    "primaryTitle": "Conflict",
+    "originalTitle": "Catholics",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BZGY0OTNiYmEtYzI5OC00OGQ2LTg2ZjEtODE3ZWU1MzFjZGZlXkEyXkFqcGc@._V1_.jpg",
-      "width": 635,
-      "height": 907
+      "url": "https://m.media-amazon.com/images/M/MV5BODJhNTUyYTAtMjg3Ny00YjkyLThiY2QtODg0MTc2ZWVmYzAwXkEyXkFqcGc@._V1_.jpg",
+      "width": 850,
+      "height": 1221
     },
-    "startYear": 2021,
+    "startYear": 1973,
+    "runtimeSeconds": 4560,
+    "genres": ["Drama"],
     "rating": {
-      "aggregateRating": 5.6,
-      "voteCount": 4223
-    }
+      "aggregateRating": 6.4,
+      "voteCount": 446
+    },
+    "plot": "Set in Ireland where the Catholic Church has been superseded by a repressive order with new ideas. When a group of Irish monks rebel, a Vatican official is sent to bring order once more.",
+    "directors": [
+      {
+        "id": "nm0324995",
+        "displayName": "Jack Gold",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMDRhOTUyNGEtZjNlNi00OWI4LWFkZjAtMGM2MmY4MTJiNzU4XkEyXkFqcGc@._V1_.jpg",
+          "width": 450,
+          "height": 600
+        },
+        "primaryProfessions": ["director", "miscellaneous", "producer"]
+      }
+    ],
+    "writers": [
+      {
+        "id": "nm0600972",
+        "displayName": "Brian Moore",
+        "alternativeNames": ["Michael Bryan"],
+        "primaryProfessions": ["producer", "writer"]
+      }
+    ],
+    "stars": [
+      {
+        "id": "nm0002145",
+        "displayName": "Trevor Howard",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BM2MyNTIwZjktM2Q2NC00ODI1LWI4MDktNTRlMGM4YjYwMmFiXkEyXkFqcGc@._V1_.jpg",
+          "width": 1000,
+          "height": 1500
+        },
+        "primaryProfessions": ["actor"]
+      },
+      {
+        "id": "nm0885203",
+        "displayName": "Raf Vallone",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNzc3MjUwOTMyN15BMl5BanBnXkFtZTcwMTYzMzAyOA@@._V1_.jpg",
+          "width": 1785,
+          "height": 2048
+        },
+        "primaryProfessions": ["actor"]
+      },
+      {
+        "id": "nm0000640",
+        "displayName": "Martin Sheen",
+        "alternativeNames": ["Ramon Gerard Estevez"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BOTM1MTA5MTY0MV5BMl5BanBnXkFtZTcwMTQ4OTUzMg@@._V1_.jpg",
+          "width": 288,
+          "height": 400
+        },
+        "primaryProfessions": ["actor", "director", "producer"]
+      },
+      {
+        "id": "nm0159258",
+        "displayName": "Cyril Cusack",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMjMzMzEyNTU5MV5BMl5BanBnXkFtZTcwNTc4MjQwOA@@._V1_.jpg",
+          "width": 1441,
+          "height": 2048
+        },
+        "primaryProfessions": ["actor", "miscellaneous"]
+      }
+    ],
+    "originCountries": [
+      {
+        "code": "GB",
+        "name": "United Kingdom"
+      },
+      {
+        "code": "US",
+        "name": "United States"
+      }
+    ],
+    "spokenLanguages": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ],
+    "interests": [
+      {
+        "id": "in0000076",
+        "name": "Drama"
+      }
+    ]
   },
   {
     "id": "tt0381061",
@@ -2274,20 +2389,111 @@
     }
   },
   {
-    "id": "tt0095444",
-    "type": "movie",
-    "primaryTitle": "Killer Klowns from Outer Space",
-    "originalTitle": "Killer Klowns from Outer Space",
+    "id": "tt2222259",
+    "type": "tvEpisode",
+    "primaryTitle": "Gayniggers from Outer Space",
     "primaryImage": {
-      "url": "https://m.media-amazon.com/images/M/MV5BOWQ0MjRiMzktNGYyMi00YjNkLTg5OGItOGM2MTBlZDAxNWRmXkEyXkFqcGc@._V1_.jpg",
-      "width": 1484,
-      "height": 2250
+      "url": "https://m.media-amazon.com/images/M/MV5BZDI5NGJmYTAtZTAyNi00YjlkLWEzMTItODM1YTViYjMyNGE4XkEyXkFqcGc@._V1_.jpg",
+      "width": 1200,
+      "height": 703
     },
-    "startYear": 1988,
+    "startYear": 2012,
+    "runtimeSeconds": 840,
+    "genres": ["Comedy", "Drama", "Fantasy", "Horror", "Mystery", "Thriller"],
     "rating": {
-      "aggregateRating": 6.2,
-      "voteCount": 52734
-    }
+      "aggregateRating": 6.8,
+      "voteCount": 320
+    },
+    "plot": "A group of black, all male aliens travel to Earth to rid the planet of oppressive, female earthlings.",
+    "directors": [
+      {
+        "id": "nm4515123",
+        "displayName": "Jerrica Benton",
+        "alternativeNames": [
+          "Xaria Bryon",
+          "Xaria Byron",
+          "Diamanda 'Gracejones' Hagan",
+          "Diamanda Hagan",
+          "Diamanda Hagen"
+        ],
+        "primaryProfessions": ["actress", "producer", "writer"]
+      }
+    ],
+    "writers": [
+      {
+        "id": "nm4515123",
+        "displayName": "Jerrica Benton",
+        "alternativeNames": [
+          "Xaria Bryon",
+          "Xaria Byron",
+          "Diamanda 'Gracejones' Hagan",
+          "Diamanda Hagan",
+          "Diamanda Hagen"
+        ],
+        "primaryProfessions": ["actress", "producer", "writer"]
+      }
+    ],
+    "stars": [
+      {
+        "id": "nm10173284",
+        "displayName": "Victor Wozny",
+        "primaryProfessions": ["actor"]
+      },
+      {
+        "id": "nm16539358",
+        "displayName": "Özgür Demirci",
+        "primaryProfessions": ["actor"]
+      },
+      {
+        "id": "nm2466262",
+        "displayName": "Daren Jackson",
+        "alternativeNames": [
+          "Masta Artisan",
+          "Rap Critic",
+          "Daren 'Miracle' Jackson",
+          "The Rap Critic"
+        ],
+        "primaryProfessions": ["actor", "producer", "writer"]
+      },
+      {
+        "id": "nm4515123",
+        "displayName": "Jerrica Benton",
+        "alternativeNames": [
+          "Xaria Bryon",
+          "Xaria Byron",
+          "Diamanda 'Gracejones' Hagan",
+          "Diamanda Hagan",
+          "Diamanda Hagen"
+        ],
+        "primaryProfessions": ["actress", "producer", "writer"]
+      }
+    ],
+    "interests": [
+      {
+        "id": "in0000034",
+        "name": "Comedy"
+      },
+      {
+        "id": "in0000076",
+        "name": "Drama"
+      },
+      {
+        "id": "in0000098",
+        "name": "Fantasy"
+      },
+      {
+        "id": "in0000112",
+        "name": "Horror"
+      },
+      {
+        "id": "in0000139",
+        "name": "Mystery"
+      },
+      {
+        "id": "in0000186",
+        "name": "Thriller"
+      }
+    ]
   },
   {
     "id": "tt30007864",
@@ -3232,5 +3438,57 @@
       "aggregateRating": 8.1,
       "voteCount": 76684
     }
+  },
+  {
+    "id": "tt0864835",
+    "type": "movie",
+    "primaryTitle": "Mr. Peabody & Sherman",
+    "originalTitle": "Mr. Peabody & Sherman",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BZWMyODZlZTktNWE0Ny00YzUzLWFkOTQtZjFjYjA5ZWMyZmU0XkEyXkFqcGc@._V1_.jpg",
+      "width": 2000,
+      "height": 3000
+    },
+    "startYear": 2014,
+    "rating": { "aggregateRating": 6.8, "voteCount": 84473 }
+  },
+  {
+    "id": "tt14107334",
+    "type": "movie",
+    "primaryTitle": "The Running Man",
+    "originalTitle": "The Running Man",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTk5NjU4OTAtNTEyMS00ZjBiLTg0ZjMtOGJiMGJhNjQ3MzYxXkEyXkFqcGc@._V1_.jpg",
+      "width": 2025,
+      "height": 3000
+    },
+    "startYear": 2025,
+    "rating": { "aggregateRating": 6.4, "voteCount": 110609 }
+  },
+  {
+    "id": "tt4131800",
+    "type": "movie",
+    "primaryTitle": "My Little Pony: The Movie",
+    "originalTitle": "My Little Pony: The Movie",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BNDZiNDRlNGQtNGQ4Ny00NDRiLTkwOWItZDJlZTQ4YTlmM2M3XkEyXkFqcGc@._V1_.jpg",
+      "width": 1347,
+      "height": 2048
+    },
+    "startYear": 2017,
+    "rating": { "aggregateRating": 6.1, "voteCount": 9032 }
+  },
+  {
+    "id": "tt0372784",
+    "type": "movie",
+    "primaryTitle": "Batman Begins",
+    "originalTitle": "Batman Begins",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMzA2NDQzZDEtNDU5Ni00YTlkLTg2OWEtYmQwM2Y1YTBjMjFjXkEyXkFqcGc@._V1_.jpg",
+      "width": 1013,
+      "height": 1500
+    },
+    "startYear": 2005,
+    "rating": { "aggregateRating": 8.2, "voteCount": 1719727 }
   }
 ]
