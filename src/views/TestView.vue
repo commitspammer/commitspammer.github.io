@@ -52,7 +52,7 @@ const resumeFetchingMovies = async () => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/films.json')
+    const response = await fetch('/films-to-fetch.json')
     if (!response.ok) {
       throw new Error('HTTP Error')
     }
