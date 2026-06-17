@@ -3490,5 +3490,173 @@
     },
     "startYear": 2005,
     "rating": { "aggregateRating": 8.2, "voteCount": 1719727 }
+  },
+  {
+    "id": "tt1345836",
+    "type": "movie",
+    "primaryTitle": "The Dark Knight Rises",
+    "primaryImage": {
+      "url": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_.jpg",
+      "width": 486,
+      "height": 720
+    },
+    "startYear": 2012,
+    "runtimeSeconds": 9840,
+    "genres": ["Crime", "Thriller"],
+    "rating": {
+      "aggregateRating": 8.4,
+      "voteCount": 2000597
+    },
+    "metacritic": {
+      "score": 78,
+      "reviewCount": 45
+    },
+    "plot": "Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again.",
+    "directors": [
+      {
+        "id": "nm0634240",
+        "displayName": "Christopher Nolan",
+        "alternativeNames": ["Chris Nolan"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_.jpg",
+          "width": 289,
+          "height": 400
+        },
+        "primaryProfessions": ["director", "producer", "writer"]
+      }
+    ],
+    "writers": [
+      {
+        "id": "nm0634300",
+        "displayName": "Jonathan Nolan",
+        "alternativeNames": ["Jonah Nolan"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTEwNjY2MjgxMTZeQTJeQWpwZ15BbWU3MDY4NjY1Mjc@._V1_.jpg",
+          "width": 1388,
+          "height": 2000
+        },
+        "primaryProfessions": ["director", "producer", "writer"]
+      },
+      {
+        "id": "nm0634240",
+        "displayName": "Christopher Nolan",
+        "alternativeNames": ["Chris Nolan"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BNjE3NDQyOTYyMV5BMl5BanBnXkFtZTcwODcyODU2Mw@@._V1_.jpg",
+          "width": 289,
+          "height": 400
+        },
+        "primaryProfessions": ["director", "producer", "writer"]
+      },
+      {
+        "id": "nm0275286",
+        "displayName": "David S. Goyer",
+        "alternativeNames": ["Ricardo Festiva", "David Goyer", "Cynthia Verlaine"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMWE2YmY1N2ItYzg5MC00MzVkLThmMGQtNmE0NGMyNTcxNjE4XkEyXkFqcGc@._V1_.jpg",
+          "width": 948,
+          "height": 849
+        },
+        "primaryProfessions": ["director", "producer", "writer"]
+      }
+    ],
+    "stars": [
+      {
+        "id": "nm0000288",
+        "displayName": "Christian Bale",
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4MF5BMl5BanBnXkFtZTcwMzExODQxOA@@._V1_.jpg",
+          "width": 1363,
+          "height": 2048
+        },
+        "primaryProfessions": ["actor", "editorial_department", "producer"]
+      },
+      {
+        "id": "nm0004266",
+        "displayName": "Anne Hathaway",
+        "alternativeNames": ["An Hasawei", "Anne Whitney Hathaway", "Ann Hathaway", "Enn Kheteuey"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BYWQ5MzViNjUtODdmMi00MjYxLTg0OTItM2NkOTg1YzFjYjMxXkEyXkFqcGc@._V1_CR427,126,1366,2049_.jpg",
+          "width": 1366,
+          "height": 2049
+        },
+        "primaryProfessions": ["actress", "miscellaneous", "producer"]
+      },
+      {
+        "id": "nm0000198",
+        "displayName": "Gary Oldman",
+        "alternativeNames": ["Maurice Escargot", "Gary von Oldman"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTc3NTM4MzQ5MV5BMl5BanBnXkFtZTcwOTE4MDczNw@@._V1_.jpg",
+          "width": 1389,
+          "height": 2048
+        },
+        "primaryProfessions": ["actor", "director", "producer"]
+      },
+      {
+        "id": "nm0362766",
+        "displayName": "Tom Hardy",
+        "alternativeNames": ["Thomas Hardy"],
+        "primaryImage": {
+          "url": "https://m.media-amazon.com/images/M/MV5BMTQ3ODEyNjA4Nl5BMl5BanBnXkFtZTgwMTE4ODMyMjE@._V1_.jpg",
+          "width": 1366,
+          "height": 2048
+        },
+        "primaryProfessions": ["actor", "producer", "writer"]
+      }
+    ],
+    "originCountries": [
+      {
+        "code": "US",
+        "name": "United States"
+      },
+      {
+        "code": "GB",
+        "name": "United Kingdom"
+      }
+    ],
+    "spokenLanguages": [
+      {
+        "code": "eng",
+        "name": "English"
+      },
+      {
+        "code": "ara",
+        "name": "Arabic"
+      }
+    ],
+    "interests": [
+      {
+        "id": "in0000001",
+        "name": "Action"
+      },
+      {
+        "id": "in0000002",
+        "name": "Action Epic",
+        "isSubgenre": true
+      },
+      {
+        "id": "in0000008",
+        "name": "Superhero",
+        "isSubgenre": true
+      },
+      {
+        "id": "in0000052",
+        "name": "Crime"
+      },
+      {
+        "id": "in0000076",
+        "name": "Drama"
+      },
+      {
+        "id": "in0000077",
+        "name": "Epic",
+        "isSubgenre": true
+      },
+      {
+        "id": "in0000186",
+        "name": "Thriller"
+      }
+    ]
   }
 ]
