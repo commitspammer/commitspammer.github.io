@@ -1,18 +1,18 @@
 <template>
   <div
     @click="selected = !selected"
+    @mouseenter="hovered = true"
+    @mouseleave="hovered = false"
+    @touchstart="hovered = !hovered"
     class="relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
     style="filter: drop-shadow(0 5px 5px #000)"
   >
     <div
-      class="border-16 md:border-32"
-      :class="[watched ? 'leds' : 'leds-off']"
-      :style="[
-        watched
-          ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;'
-          : 'filter: drop-shadow(0 1px 1px #000);',
-      ]"
+      class="border-16 md:border-16"
+      :class="[hovered ? 'leds-on' : 'leds-off']"
+      style="filter: drop-shadow(0 1px 1px #000)"
     >
+      <!--:style="[ watched ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;' : 'filter: drop-shadow(0 1px 1px #000);', ]"-->
       <div class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm">
         <div class="">
           <img
@@ -61,6 +61,7 @@ defineProps({
 //)
 
 const selected = ref(false)
+const hovered = ref(false)
 
 const imdbResults = ref(null)
 
@@ -84,7 +85,7 @@ onMounted(async () => {
   --yellow-circle-27: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27'%3E%3Ccircle cx='13.5' cy='13.5' r='13.5' fill='%23ffff00'/%3E%3C/svg%3E");
   background-image: var(--yellow-circle-27); /* bg-repeat-space */
 }
-.leds {
+.leds-on {
   border-image-slice: 33.33%;
   border-image-repeat: space;
   border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 288 288'%3E%3Cg fill='%23FFD400'%3E%3Ccircle cx='48' cy='48' r='32'/%3E%3Ccircle cx='144' cy='48' r='32'/%3E%3Ccircle cx='240' cy='48' r='32'/%3E%3Ccircle cx='48' cy='144' r='32'/%3E%3Ccircle cx='144' cy='144' r='32'/%3E%3Ccircle cx='240' cy='144' r='32'/%3E%3Ccircle cx='48' cy='240' r='32'/%3E%3Ccircle cx='144' cy='240' r='32'/%3E%3Ccircle cx='240' cy='240' r='32'/%3E%3C/g%3E%3C/svg%3E");
