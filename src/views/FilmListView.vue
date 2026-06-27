@@ -6,19 +6,49 @@
     <!-- NOTE: The image "https://gcdnb.pbrd.co/images/M-7_6JpjSNk4.png" will die on August 26 -->
     <!--<div class="bg-[radial-gradient(circle,#ffff00_10px,transparent_1px)] bg-[size:40px_40px] h-250">
     </div>-->
-    <div class="w-full lg:w-11/12 xl:w-5/6 2xl:w-2/3 m-auto">
+    <div
+      class="w-full lg:w-11/12 xl:w-5/6 2xl:w-2/3 m-auto bg-stone-800 border-stone-800 border-16 md:border-[96px] leds"
+      style="
+        filter: drop-shadow(0 5px 5px #000);
+        animation-name: pulse;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+      "
+    >
       <div
-        class="grid grid-cols-1 auto-rows-fr gap-[2px] p-4 text-center bg-stone-800 font-[Stack_Sans_Text] font-bold uppercase text-4xl"
+        class="px-2 md:px-12 xl:px-24 py-12 bg-yellow-100 text-2xl md:text-4xl text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm"
       >
-        <div class="bg-yellow-50"></div>
-        <div class="bg-yellow-50">
-          <div class="scale-200"><RouterLink to="/films">Now showing</RouterLink></div>
+        <div class="flex flex-col text-center text-4xl md:text-6xl xl:text-8xl mb-12">
+          <p>NOW SHOWING</p>
+          <p class="text-sm md:text-xl xl:text-2xl">★ The best (and worst) of cinema ★</p>
         </div>
-        <div class="bg-yellow-50"></div>
-        <div class="bg-yellow-50">
-          <div class="scale-200"><RouterLink to="/films">Coming soon</RouterLink></div>
+        <div class="flex flex-row-reverse space-x-reverse">
+          <button
+            v-on:click="sortFilmsByRating"
+            class="text-xl xl:text-2xl px-2 duration-300"
+            :class="sortRatingPressedClass"
+          >
+            Rating
+          </button>
+          <button
+            v-on:click="sortFilmsByAlphabet"
+            class="text-xl xl:text-2xl px-2 duration-300"
+            :class="sortAlphabetPressedClass"
+          >
+            Alphabet
+          </button>
         </div>
-        <div class="bg-yellow-50"></div>
+        <hr class="mb-2 border border-red-950" />
+        <div v-if="films.length === 0">Winding films...</div>
+        <FilmItem
+          v-else
+          v-for="(f, index) in watchedThenUnwatchedFilms"
+          :key="f.name"
+          :rank="index + 1"
+          :title="f.name"
+          :rating="f.rating"
+          :watched="f.watched"
+        />
       </div>
     </div>
   </main>
@@ -26,7 +56,6 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import { RouterLink } from 'vue-router'
 import FilmItem from '../components/FilmItem.vue'
 
 const films = ref([])

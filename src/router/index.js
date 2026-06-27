@@ -8,6 +8,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
+      /* component: HomeView, */
+      redirect: '/films',
+    },
+    {
+      path: '/films',
+      name: 'films',
       component: FilmHallView,
     },
     {
