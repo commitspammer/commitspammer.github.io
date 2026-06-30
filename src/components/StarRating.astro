@@ -1,0 +1,19 @@
+---
+import PlainStar from "../assets/star.svg";
+
+const { rating, watched, class: className } = Astro.props;
+---
+
+<div class:list={["relative flex items-center justify-center", className]}>
+  { watched ? (
+    <PlainStar class="fill-yellow-400 stroke-white stroke-1" />
+    <div class="absolute z-1 inset-0 flex items-center justify-center">
+      {rating}
+    </div>
+  ) : (
+    <PlainStar class="fill-red-950 stroke-white stroke-1" />
+    <div class="absolute z-1 inset-0 flex items-center justify-center text-white">
+      ?
+    </div>
+  ) }
+</div>

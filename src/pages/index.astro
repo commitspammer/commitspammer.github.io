@@ -1,11 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <main
+    class="min-h-screen p-2 md:p-4 md:pt-5 bg-[url(/red-wall.png)] bg-linear-to-l from-red-900 to-red-500"
+  >
+    <div class="w-full lg:w-11/12 xl:w-5/6 2xl:w-2/3 m-auto">
+      <div
+        class="grid grid-cols-1 auto-rows-fr gap-0.5 p-4 text-center font-[Stack_Sans_Text] font-bold uppercase text-4xl bg-stone-800"
+      >
+        <div class="bg-yellow-50"></div>
+        <div class="bg-yellow-50">
+          <div class="scale-200 hover:-translate-y-2 transition ease-in-out">
+            <a href="/films">Now showing</a>
+          </div>
+        </div>
+        <div class="bg-yellow-50"></div>
+        <div class="bg-yellow-50">
+          <div class="scale-200 hover:-translate-y-2 transition ease-in-out">
+            <a href="/films">Coming soon</a>
+          </div>
+        </div>
+        <div class="bg-yellow-50"></div>
+      </div>
+    </div>
+  </main>
 </Layout>

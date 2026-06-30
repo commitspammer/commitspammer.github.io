@@ -1,0 +1,87 @@
+---
+import imdbResults from "../data/imdbapi.json";
+import StarRating from "../components/StarRating.astro";
+
+const { id, rank, title, rating, watched } = Astro.props;
+
+const posterUrl = imdbResults.find((r) => r?.id === id)?.primaryImage?.url;
+
+const signId = `sign-${id}`;
+const lightsId = `sign-${id}-lights`;
+---
+
+<div
+  id={signId}
+  class="relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
+  style="filter: drop-shadow(0 5px 5px #000)"
+>
+  <div
+    id={lightsId}
+    class="border-16 md:border-16 leds-off"
+    style="filter: drop-shadow(0 1px 1px #000)"
+  >
+    <!--:style="[ watched ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;' : 'filter: drop-shadow(0 1px 1px #000);', ]"-->
+    <div
+      class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm"
+    >
+      <div class="">
+        {
+          posterUrl ? (
+            <img src={posterUrl} class="object-cover aspect-68/100" />
+          ) : (
+            <div class="aspect-68/100 select-none flex items-center justify-center text-center text-sm md:text-xl">
+              {title}
+            </div>
+          )
+        }
+      </div>
+      <div class="absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16">
+        <StarRating
+          rating={rating}
+          watched={watched}
+          class="size-20 md:size-32 text-2xl md:text-4xl select-none group-hover:opacity-5 transition duration-300 ease-in-out"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .leds-on {
+    border-image-slice: 33.33%;
+    border-image-repeat: space;
+    border-image-source: url("../assets/yellow-led-on.svg");
+  }
+  .leds-off {
+    border-image-slice: 33.33%;
+    border-image-repeat: space;
+    border-image-source: url("../assets/yellow-led-off.svg");
+  }
+  @keyframes pulse {
+    0%,
+    94%,
+    97% {
+      border-image-source: url("../assets/yellow-led-off.svg");
+    }
+    95%,
+    99% {
+      border-image-source: url("../assets/yellow-led-on.svg");
+    }
+  }
+</style>
+
+<script define:vars={{ signId, lightsId }} is:inline>
+  const sign = document.getElementById(signId);
+  sign?.addEventListener("click", () => {
+    console.log("selected");
+  });
+  const lights = document.getElementById(lightsId);
+  lights?.addEventListener("mouseenter", () => {
+    lights.classList.remove("leds-off");
+    lights.classList.add("leds-on");
+  });
+  lights?.addEventListener("mouseleave", () => {
+    lights.classList.remove("leds-on");
+    lights.classList.add("leds-off");
+  });
+</script>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 288">
+  <g fill="#FFD400">
+    <circle cx="48" cy="48" r="32" />
+    <circle cx="144" cy="48" r="32" />
+    <circle cx="240" cy="48" r="32" />
+    <circle cx="48" cy="144" r="32" />
+    <circle cx="144" cy="144" r="32" />
+    <circle cx="240" cy="144" r="32" />
+    <circle cx="48" cy="240" r="32" />
+    <circle cx="144" cy="240" r="32" />
+    <circle cx="240" cy="240" r="32" />
+  </g>
+</svg>
