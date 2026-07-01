@@ -1,0 +1,73 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import FilmSign from "../../components/FilmSign.astro";
+import films from "../../data/films.json";
+
+export async function getStaticPaths() {
+  const filmsSortedByRating = films?.sort((a, b) => b.rating - a.rating);
+  const filmsWatchedThenUnwatched = filmsSortedByRating
+    ?.filter((f) => f.watched)
+    .concat(filmsSortedByRating?.filter((f) => !f.watched));
+
+  return filmsWatchedThenUnwatched.map((f) => {
+    return {
+      params: { id: f.id },
+      props: { ...f },
+    };
+  });
+}
+
+const filmsSortedByRating = films?.sort((a, b) => b.rating - a.rating);
+const filmsWatchedThenUnwatched = filmsSortedByRating
+  ?.filter((f) => f.watched)
+  .concat(filmsSortedByRating?.filter((f) => !f.watched));
+const film = Astro.props;
+---
+
+<Layout>
+  <div
+    id="back"
+    class="fixed z-2 min-h-screen size-full flex items-center justify-center"
+  >
+    <div class="max-w-md" transition:name={film?.id}>
+      {
+        film && (
+          <FilmSign
+            id={film.id}
+            rank={1}
+            title={film.name}
+            rating={film.rating}
+            watched={film.watched}
+          />
+        )
+      }
+    </div>
+  </div>
+  <main
+    class="min-h-screen overflow-hidden p-2 pb-32 md:p-4 md:pt-5 md:pb-64 bg-[url(/red-wall.png)] bg-linear-to-l from-red-900 to-red-500 blur-sm"
+  >
+    <div
+      class="w-full lg:w-11/12 xl:w-5/6 m-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-16"
+    >
+      {
+        films &&
+          filmsWatchedThenUnwatched.map((f, index) => (
+            <FilmSign
+              id={f.id}
+              rank={index + 1}
+              title={f.name}
+              rating={f.rating}
+              watched={f.watched}
+            />
+          ))
+      }
+    </div>
+  </main>
+</Layout>
+
+<script is:inline data-astro-rerun>
+  var back = document.getElementById("back");
+  back?.addEventListener("click", () => {
+    history.back();
+  });
+</script>

@@ -17,15 +17,17 @@ const filmsWatchedThenUnwatched = filmsSortedByRating
       class="w-full lg:w-11/12 xl:w-5/6 m-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-16"
     >
       {
-        films &&
+        filmsWatchedThenUnwatched &&
           filmsWatchedThenUnwatched.map((f, index) => (
-            <FilmSign
-              id={f.id}
-              rank={index + 1}
-              title={f.name}
-              rating={f.rating}
-              watched={f.watched}
-            />
+            <a class="block" href={`/films/${f.id}`} transition:name={f.id}>
+              <FilmSign
+                id={f.id}
+                rank={index + 1}
+                title={f.name}
+                rating={f.rating}
+                watched={f.watched}
+              />
+            </a>
           ))
       }
     </div>

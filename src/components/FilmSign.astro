@@ -8,11 +8,14 @@ const posterUrl = imdbResults.find((r) => r?.id === id)?.primaryImage?.url;
 
 const signId = `sign-${id}`;
 const lightsId = `sign-${id}-lights`;
+//NOTE transition:name will falsely throw a non-unique name error if linked to a <inline><block/></inline> structure on Firefox
+//     the fix is to make the inline element (in this case, <a>) display as a block
+//     see: https://bugzilla.mozilla.org/show_bug.cgi?id=1999336
 ---
 
 <div
   id={signId}
-  class="relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
+  class="block relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
   style="filter: drop-shadow(0 5px 5px #000)"
 >
   <div
