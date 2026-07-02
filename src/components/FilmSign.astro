@@ -15,42 +15,42 @@ const lightsId = `sign-${id}-lights`;
 
 <div
   id={signId}
-  class="block relative w-full bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
+  class="p-1.5 bg-stone-800 relative group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
   style="filter: drop-shadow(0 5px 5px #000)"
 >
-  <div
-    id={lightsId}
-    class="border-16 md:border-16 leds-off"
-    style="filter: drop-shadow(0 1px 1px #000)"
-  >
-    <!--:style="[ watched ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;' : 'filter: drop-shadow(0 1px 1px #000);', ]"-->
-    <div
-      class="bg-yellow-100 text-red-950 font-[Limelight] inset-shadow-black inset-shadow-sm"
-    >
-      <div class="">
-        {
-          posterUrl ? (
-            <img src={posterUrl} class="object-cover aspect-68/100" />
-          ) : (
-            <div class="aspect-68/100 select-none flex items-center justify-center text-center text-sm md:text-xl">
-              {title}
-            </div>
-          )
-        }
-      </div>
-      <div class="absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16">
-        <StarRating
-          rating={rating}
-          watched={watched}
-          class="size-20 md:size-32 text-2xl md:text-4xl select-none group-hover:opacity-5 transition duration-300 ease-in-out"
-        />
+  <div class="p-0.5 bg-olive-700 group-hover:bg-yellow-400">
+    <div class="p-1.5 bg-stone-800">
+      <!--:style="[ watched ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;' : 'filter: drop-shadow(0 1px 1px #000);', ]"-->
+      <div class="bg-yellow-100 text-red-950 font-[Limelight]">
+        <div
+          class="relative after:absolute after:inset-0 after:block after:inset-shadow-sm after:inset-shadow-black"
+        >
+          {
+            posterUrl ? (
+              <img src={posterUrl} class="object-cover aspect-68/100" />
+            ) : (
+              <div class="aspect-68/100 select-none flex items-center justify-center text-center text-sm md:text-xl">
+                {title}
+              </div>
+            )
+          }
+          <div
+            class="z-1 absolute -bottom-10 -right-7 md:-bottom-20 md:-right-16"
+          >
+            <StarRating
+              rating={rating}
+              watched={watched}
+              class="size-20 md:size-32 text-2xl md:text-4xl select-none group-hover:opacity-5 transition duration-300 ease-in-out"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <style>
-  .leds-on {
+  /*.leds-on {
     border-image-slice: 33.33%;
     border-image-repeat: space;
     border-image-source: url("../assets/yellow-led-on.svg");
@@ -70,21 +70,21 @@ const lightsId = `sign-${id}-lights`;
     99% {
       border-image-source: url("../assets/yellow-led-on.svg");
     }
-  }
+    }*/
 </style>
 
 <script define:vars={{ signId, lightsId }} is:inline>
-  const sign = document.getElementById(signId);
-  sign?.addEventListener("click", () => {
-    console.log("selected");
-  });
-  const lights = document.getElementById(lightsId);
-  lights?.addEventListener("mouseenter", () => {
-    lights.classList.remove("leds-off");
-    lights.classList.add("leds-on");
-  });
-  lights?.addEventListener("mouseleave", () => {
-    lights.classList.remove("leds-on");
-    lights.classList.add("leds-off");
-  });
+  //  const sign = document.getElementById(signId);
+  //  sign?.addEventListener("click", () => {
+  //    console.log("selected");
+  //  });
+  //  const lights = document.getElementById(lightsId);
+  //  lights?.addEventListener("mouseenter", () => {
+  //    lights.classList.remove("leds-off");
+  //    lights.classList.add("leds-on");
+  //  });
+  //  lights?.addEventListener("mouseleave", () => {
+  //    lights.classList.remove("leds-on");
+  //    lights.classList.add("leds-off");
+  //  });
 </script>
