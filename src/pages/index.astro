@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import theaterFront from "../assets/theater-facade.png";
 ---
 
 <Layout>
@@ -10,19 +11,34 @@ import Layout from "../layouts/Layout.astro";
       class="w-full lg:w-11/12 xl:w-5/6 2xl:w-2/3 m-auto"
       transition:animate="fade"
     >
+      <div class="flex justify-center">
+        <img src={theaterFront.src} />
+      </div>
       <div
-        class="grid grid-cols-1 auto-rows-fr gap-0.5 p-4 text-center font-[Stack_Sans_Text] font-bold uppercase text-4xl bg-stone-800"
+        class="grid grid-cols-1 auto-rows-fr gap-0.5 p-4 text-center font-[Stack_Sans_Text] font-bold uppercase text-md sm:text-4xl bg-stone-800"
       >
         <div class="bg-yellow-50"></div>
         <div class="bg-yellow-50">
-          <div class="scale-200 hover:-translate-y-2 transition ease-in-out">
-            <a href="/films">Now showing</a>
+          <div
+            class="scale-200 group hover:-translate-y-2 transition ease-in-out"
+          >
+            <a href="/films"
+              ><span class="hidden group-hover:inline">&gt;</span> Now showing <span
+                class="hidden group-hover:inline">&lt;</span
+              ></a
+            >
           </div>
         </div>
         <div class="bg-yellow-50"></div>
         <div class="bg-yellow-50">
-          <div class="scale-200 hover:-translate-y-2 transition ease-in-out">
-            <a href="/films">Coming soon</a>
+          <div
+            class="scale-200 group hover:-translate-y-2 transition ease-in-out"
+          >
+            <a href="/films"
+              ><span class="hidden group-hover:inline">&gt;</span> Coming soon <span
+                class="hidden group-hover:inline">&lt;</span
+              ></a
+            >
           </div>
         </div>
         <div class="bg-yellow-50"></div>
