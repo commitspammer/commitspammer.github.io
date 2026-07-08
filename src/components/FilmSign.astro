@@ -26,8 +26,12 @@ const lightsId = `sign-${id}-lights`;
           class="relative after:absolute after:inset-0 after:block after:inset-shadow-sm after:inset-shadow-black"
         >
           {
-            posterUrl ? (
-              <img src={posterUrl} class="object-cover aspect-68/100" />
+            !posterUrl ? (
+              <img
+                src={posterUrl}
+                class="object-cover aspect-68/100"
+                loading="lazy"
+              />
             ) : (
               <div class="aspect-68/100 select-none flex items-center justify-center text-center text-sm md:text-xl">
                 {title}
