@@ -33,38 +33,41 @@ const { film, filmImdb } = Astro.props;
             <FilmSign
               id={film.id}
               rank={1}
-              title={film.name}
+              title={film.title}
               rating={film.rating}
               watched={film.watched}
             />
           )
         }
       </div>
-      <div
-        class="flex-2/3 bg-amber-100 text-red-950 font-[Limelight] px-8 py-16"
-        style="filter: drop-shadow(0 5px 5px #000)"
-      >
-        <h1
-          class="text-6xl text-center mb-4 flex items-center justify-center space-x-4"
+      <div class="flex-2/3 p-16">
+        <div
+          class="bg-amber-100 text-red-950 font-[Limelight] px-8 py-16"
+          style="filter: drop-shadow(0 5px 5px #000)"
         >
-          <span>★</span>
-          <span>
-            {film.name}
-          </span>
-          <span>★</span>
-        </h1>
-        <h2 class="text-2xl">
-          Release year: {filmImdb?.startYear}
-        </h2>
-        <h2 class="text-2xl">
-          IMDb Rating: {filmImdb?.rating.aggregateRating}/10
-        </h2>
-        <p class="text-xl indent-8 mt-8 mx-8">
-          The Truman Show is a tear-shedding intrepretation of Plato's Allegory
-          of the Cave. Jim Carrey manages to find the perfect blend of comedic
-          and serious. As Truman's sense of reality slowly and painfully
-          shatters, the viewer can't help but feel in his place.
-        </p>
+          <h1
+            class="text-6xl text-center mb-4 flex items-center justify-center space-x-4"
+          >
+            <span>★</span>
+            <span>
+              {film.title}
+            </span>
+            <span>★</span>
+          </h1>
+          <h2 class="text-2xl">
+            Release year: {filmImdb?.startYear}
+          </h2>
+          <h2 class="text-2xl">
+            IMDb Rating: {filmImdb?.rating.aggregateRating}/10
+          </h2>
+          <p class="text-xl indent-8 mt-8 mx-8">
+            The Truman Show is a tear-shedding intrepretation of Plato's
+            Allegory of the Cave. Jim Carrey manages to find the perfect blend
+            of comedic and serious in his acting. As Truman's sense of reality
+            slowly and painfully shatters, the viewer can't help but feel
+            themselves in his shoes.
+          </p>
+        </div>
       </div>
     </div>
   </div>
