@@ -3,7 +3,10 @@ import { Image } from "astro:assets";
 import imdbResults from "../data/imdbapi.json";
 import StarRating from "../components/StarRating.astro";
 
-const { id, ranking, title, rating, watched } = Astro.props;
+const { id, ranking, title, rating, watched, frameThickness } = Astro.props;
+
+const frameDarkPadding = frameThickness?.[0] ?? 1.5;
+const frameLightPadding = frameThickness?.[1] ?? 0.5;
 
 const posterImage = imdbResults.find((r) => r?.id === id)?.primaryImage;
 
@@ -16,13 +19,12 @@ const lightsId = `sign-${id}-lights`;
 
 <div
   id={signId}
-  class="relative p-1.5 bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out"
+  class={`relative p-${frameDarkPadding} bg-stone-800 group hover:shadow-xl/100 shadow-yellow-100 transition duration-300 ease-in-out`}
   style="filter: drop-shadow(0 5px 5px #000)"
 >
-  <div class="p-0.5 bg-olive-700 group-hover:bg-yellow-400">
-    <div class="p-1.5 bg-stone-800">
-      <!--:style="[ watched ? 'filter: drop-shadow(0 1px 1px #000); animation-name: pulse; animation-duration: 20s; animation-iteration-count: infinite;' : 'filter: drop-shadow(0 1px 1px #000);', ]"-->
-      <div class="bg-yellow-100 text-red-950 font-[Limelight]">
+  <div class={`p-${frameLightPadding} bg-olive-700 group-hover:bg-yellow-400`}>
+    <div class={`p-${frameDarkPadding} bg-stone-800`}>
+      <div class="bg-stone-900 text-yellow-50 font-[Limelight]">
         <div
           class="relative after:absolute after:inset-0 after:block after:inset-shadow-sm after:inset-shadow-black"
         >
@@ -64,30 +66,6 @@ const lightsId = `sign-${id}-lights`;
     )
   }
 </div>
-
-<style>
-  /*.leds-on {
-    border-image-slice: 33.33%;
-    border-image-repeat: space;
-    border-image-source: url("../assets/yellow-led-on.svg");
-  }
-  .leds-off {
-    border-image-slice: 33.33%;
-    border-image-repeat: space;
-    border-image-source: url("../assets/yellow-led-off.svg");
-  }
-  @keyframes pulse {
-    0%,
-    94%,
-    97% {
-      border-image-source: url("../assets/yellow-led-off.svg");
-    }
-    95%,
-    99% {
-      border-image-source: url("../assets/yellow-led-on.svg");
-    }
-    }*/
-</style>
 
 <script define:vars={{ signId, lightsId }} is:inline>
   //  const sign = document.getElementById(signId);
