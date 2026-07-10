@@ -1,10 +1,11 @@
 ---
+import { Image } from "astro:assets";
 import imdbResults from "../data/imdbapi.json";
 import StarRating from "../components/StarRating.astro";
 
 const { id, ranking, title, rating, watched } = Astro.props;
 
-const posterUrl = imdbResults.find((r) => r?.id === id)?.primaryImage?.url;
+const posterImage = imdbResults.find((r) => r?.id === id)?.primaryImage;
 
 const signId = `sign-${id}`;
 const lightsId = `sign-${id}-lights`;
@@ -26,9 +27,12 @@ const lightsId = `sign-${id}-lights`;
           class="relative after:absolute after:inset-0 after:block after:inset-shadow-sm after:inset-shadow-black"
         >
           {
-            posterUrl ? (
-              <img
-                src={posterUrl}
+            posterImage && posterImage.url ? (
+              <Image
+                src={posterImage.url}
+                alt={`"${title}" poster`}
+                width={posterImage.width}
+                height={posterImage.height}
                 class="object-cover aspect-68/100"
                 loading="lazy"
               />
@@ -51,7 +55,10 @@ const lightsId = `sign-${id}-lights`;
   </div>
   {
     ranking && (
-      <div class="absolute bottom-0 left-0 translate-y-1/1 bg-yellow-50 py-1 px-3 rounded-b-xl font-[Limelight]">
+      <div
+        class="absolute bottom-0 left-3 translate-y-1/1 bg-yellow-50 py-1 px-3 rounded-b-xl font-[Limelight]
+      select-none group-hover:opacity-5 transition duration-300 ease-in-out"
+      >
         #{ranking}
       </div>
     )
