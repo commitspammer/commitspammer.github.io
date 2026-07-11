@@ -6,8 +6,7 @@ import films from "../data/films.json";
 const filmsSortedByRating = films?.sort((a, b) => b.rating - a.rating);
 const filmsWatchedThenUnwatched = filmsSortedByRating
   ?.filter((f) => f.watched)
-  .concat(filmsSortedByRating?.filter((f) => !f.watched))
-  .slice(0, 24);
+  .concat(filmsSortedByRating?.filter((f) => !f.watched));
 ---
 
 <Layout>
