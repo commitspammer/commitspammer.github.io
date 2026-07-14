@@ -28,7 +28,7 @@ import { ClientRouter } from "astro:transitions";
   </head>
   <body class="relative min-h-screen">
     <slot />
-    <div class="absolute top-0 left-0 p-4" onclick="window.history.back()">
+    <div class="fixed top-0 left-0 p-4" onclick="window.history.back()">
       <div class="bg-white rounded-full">
         <svg
           xmlns="http://www.w3.org/2000/svg"
