@@ -113,7 +113,7 @@
   {
     "title": "Dune: Part One",
     "watched": true,
-    "rating": 7.8,
+    "rating": 7.9,
     "id": "tt1160419"
   },
   {
@@ -134,8 +134,8 @@
     "rating": 0,
     "id": "tt0086879"
   },
-  { "title": "Drive", "watched": true, "rating": 3, "id": "tt0780504" },
-  { "title": "The Shining", "watched": true, "rating": 7.1, "id": "tt0081505" },
+  { "title": "Drive", "watched": true, "rating": 3.7, "id": "tt0780504" },
+  { "title": "The Shining", "watched": true, "rating": 7.6, "id": "tt0081505" },
   { "title": "Amélie", "watched": false, "rating": 0, "id": "tt0211915" },
   {
     "title": "The Lighthouse (2019)",
@@ -428,7 +428,7 @@
     "rating": 8.4,
     "id": "tt0413895"
   },
-  { "title": "Nefarious", "watched": true, "rating": 9, "id": "tt14537248" },
+  { "title": "Nefarious", "watched": true, "rating": 8.9, "id": "tt14537248" },
   { "title": "Chernobyl", "watched": false, "rating": 0, "id": "tt7366338" },
   { "title": "Forrest Gump", "watched": false, "rating": 0, "id": "tt0109830" },
   {
@@ -437,7 +437,7 @@
     "rating": 6.8,
     "id": "tt0096438"
   },
-  { "title": "Nosferatu", "watched": true, "rating": 7.5, "id": "tt5040012" },
+  { "title": "Nosferatu", "watched": true, "rating": 7.1, "id": "tt5040012" },
   {
     "title": "As Above, So Below",
     "watched": true,
@@ -676,7 +676,7 @@
   {
     "title": "The Legend of The Guardians",
     "watched": true,
-    "rating": 7.9,
+    "rating": 7.8,
     "id": "tt1219342"
   },
   {
@@ -839,11 +839,11 @@
   },
   { "title": "Spaceman", "watched": false, "rating": 0, "id": "tt11097384" },
   { "title": "1917", "watched": true, "rating": 9.7, "id": "tt8579674" },
-  { "title": "Dunkirk", "watched": false, "rating": 0, "id": "tt5013056" },
+  { "title": "Dunkirk", "watched": true, "rating": 2.1, "id": "tt5013056" },
   { "title": "Balls Up", "watched": true, "rating": 0, "id": "tt26735622" },
   { "title": "Fargo", "watched": true, "rating": 6.4, "id": "tt0116282" },
   { "title": "From", "watched": false, "rating": 0, "id": "tt9813792" },
-  { "title": "Backrooms", "watched": true, "rating": 7.6, "id": "tt26657236" },
+  { "title": "Backrooms", "watched": true, "rating": 7.2, "id": "tt26657236" },
   {
     "title": "Quantum of Solace",
     "watched": true,
@@ -883,14 +883,13 @@
     "id": "tt1345836"
   },
   { "title": "Spy X Family", "watched": false, "rating": 0, "id": "tt13706018" },
-  { "title": "Oppenheimer", "watched": true, "rating": 0, "id": "tt15398776" },
+  { "title": "Oppenheimer", "watched": true, "rating": 3.1, "id": "tt15398776" },
   { "title": "Napoleon", "watched": true, "rating": 0, "id": "tt13287846" },
   { "title": "Toy Story", "watched": true, "rating": 0, "id": "tt0114709" },
   { "title": "Toy Story 2", "watched": true, "rating": 0, "id": "tt0120363" },
   { "title": "Toy Story 3", "watched": true, "rating": 0, "id": "tt0435761" },
   { "title": "Toy Story 4", "watched": true, "rating": 0, "id": "tt1979376" },
-  { "title": "Toy Story 5", "watched": true, "rating": 0, "id": "tt29355505" },
-  { "title": "Taxi Driver", "watched": false, "rating": 0, "id": "tt0075314" },
+  { "title": "Toy Story 5", "watched": false, "rating": 0, "id": "tt29355505" },
   { "title": "Borat", "watched": true, "rating": 0, "id": "tt0443453" },
   { "title": "RoboCop", "watched": false, "rating": 0, "id": "tt0093870" },
   { "title": "Superman", "watched": true, "rating": 0, "id": "tt5950044" },
@@ -901,15 +900,15 @@
   { "title": "The Wild Robot", "watched": true, "rating": 0, "id": "tt29623480" },
   { "title": "Bad Guys", "watched": true, "rating": 0, "id": "tt8115900" },
   { "title": "Bad Guys 2", "watched": true, "rating": 0, "id": "tt30017619" },
-  { "title": "Inside Out", "watched": true, "rating": 0, "id": "tt2096673" },
-  { "title": "Inside Out 2", "watched": true, "rating": 0, "id": "tt22022452" },
+  { "title": "Inside Out", "watched": false, "rating": 0, "id": "tt2096673" },
+  { "title": "Inside Out 2", "watched": false, "rating": 0, "id": "tt22022452" },
   { "title": "The Mitchells vs. the Machines", "watched": false, "rating": 0, "id": "tt7979580" },
   { "title": "Scott Pilgrim vs The World", "watched": false, "rating": 0, "id": "tt0446029" },
   { "title": "Iron Lung", "watched": false, "rating": 0, "id": "tt27564844" },
   { "title": "Gravity Falls", "watched": true, "rating": 0, "id": "tt1865718" },
   { "title": "Hamlet (1964)", "watched": false, "rating": 0, "id": "tt0058126" },
   { "title": "Cyberpunk: Edgerunners", "watched": false, "rating": 0, "id": "tt12590266" },
-  { "title": "Bladerunner 2049", "watched": false, "rating": 0, "id": "tt1856101" },
+  { "title": "Blade Runner 2049", "watched": false, "rating": 0, "id": "tt1856101" },
   { "title": "The Last Samurai", "watched": false, "rating": 0, "id": "tt0325710" },
   { "title": "The Grand Budapest Hotel", "watched": false, "rating": 0, "id": "tt2278388" },
   { "title": "Downton Abbey", "watched": false, "rating": 0, "id": "tt1606375" },
@@ -917,5 +916,6 @@
   { "title": "Cast Away", "watched": false, "rating": 0, "id": "tt0162222" },
   { "title": "Forgotten Island", "watched": false, "rating": 0, "id": "tt36583977" },
   { "title": "The Whale", "watched": false, "rating": 0, "id": "tt36583977" },
-  { "title": "The Thing", "watched": false, "rating": 0, "id": "tt0084787" }
+  { "title": "The Thing", "watched": false, "rating": 0, "id": "tt0084787" },
+  { "title": "The Amazing Digital Circus", "watched": false, "rating": 0, "id": "tt27610198" }
 ]
